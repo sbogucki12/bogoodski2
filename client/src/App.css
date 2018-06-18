@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Permanent+Marker');
+
+
+.landingLayout {
+	margin-top: 20%;
+	margin-left: 20%;
+	font-family: 'Roboto', sans-serif !important;
+}
+
+@media only screen and (max-width: 768px) {
+	.landingLayout {
+		margin-left: 5%;
+		margin-top: 40%;
+		font-family: 'Roboto', sans-serif !important;
+	}
+}
+
+.bogoodski {
+	font-family: 'Permanent Marker', cursive;
+	background: -webkit-linear-gradient(#4ca1af, #c4e0e5);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
