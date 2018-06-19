@@ -16,14 +16,15 @@ import Grid from '@material-ui/core/Grid';
 
 const styles = theme => ({
 	root: {
-		flexGrow: 1,
-		width: '100%',
+		flexGrow: 1,		
 		height: '100%',
 		backgroundColor: theme.palette.background.paper,
 	},
-	heading: {
-		textAlign: 'center',
-	},
+	colCentered: {
+		float: 'none',
+		margin: '0 auto',
+	}
+	
 });
 
 class ResumeMain extends React.Component {
@@ -35,101 +36,101 @@ class ResumeMain extends React.Component {
 					<Technologies />
 				</div>
 				<div>
-					<Grid container spacing={24}>
-						<Grid item md={3} sm={3} />
-						<Grid item md={5} sm={5}>
+					<Grid container spacing={8}>
+						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={11} sm={12} lg={4} xl={11}>
 							<div className={classes.heading}>
 								<Typography variant="display2">
 									<span className="bogoodski">Experience</span>
 								</Typography>
 							</div>
 						</Grid>
-						<Grid item md={4} sm={4} />
+						<Grid item md={1} sm={0} lg={4} xl={0} />
 
-						<Grid item md={4} sm={4} />
-						<Grid item md={4} sm={4}>
-							<div>
+						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
+							
 								<DeveloperCard />
-							</div>
+							
 						</Grid>
-						<Grid item md={4} sm={4} />
+						<Grid item md={1} sm={0} lg={4} xl={0} />
 
-						<Grid item md={4} sm={4} />
-						<Grid item md={4} sm={4}>
-							<div>
+						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
+							
 								<ManagerCard />
-							</div>
+							
 						</Grid>
-						<Grid item md={4} sm={4} />
+						<Grid item md={1} sm={0} lg={4} xl={0} />
 
-						<Grid item md={4} sm={4} />
-						<Grid item md={4} sm={4}>
-							<div>
+						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
+							
 								<DataCard />
-							</div>
+							
 						</Grid>
-						<Grid item md={4} sm={4} />
+						<Grid item md={1} sm={0} lg={4} xl={0} />
 
-						<Grid item md={4} sm={4} />
-						<Grid item md={4} sm={4}>
-							<div>
+						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={11} sm={12} lg={4} xl={11}  className={classes.colCentered}>
+							
 								<PolicyCard />
-							</div>
+							
 						</Grid>
-						<Grid item md={4} sm={4} />
+						<Grid item md={1} sm={0} lg={4} xl={0} />
 
-						<Grid item md={4} sm={4} />
-						<Grid item md={4} sm={4}>
-							<div>
+						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
+							
 								<AdminCard />
-							</div>
+							
 						</Grid>
-						<Grid item md={4} sm={4} />
+						<Grid item md={1} sm={0} lg={4} xl={0} />
 
-						<Grid item md={4} sm={4} />
-						<Grid item md={4} sm={4}>
-							<div>
+						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
+							
 								<MilitaryCard />
-							</div>
+							
 						</Grid>
-						<Grid item md={4} sm={4} />
+						<Grid item md={1} sm={0} lg={4} xl={0} />
 					</Grid>
 				</div>
 				<div>
-					<Grid container spacing={24}>
-						<Grid item md={3} sm={3} />
-						<Grid item md={5} sm={5}>
+					<Grid container spacing={8}>
+						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={11} sm={12} lg={4} xl={11}>
 							<div className={classes.heading}>
 								<Typography variant="display2">
 									<span className="bogoodski">Education</span>
 								</Typography>
 							</div>
 						</Grid>
-						<Grid item md={4} sm={4} />
+						<Grid item md={1} sm={0} lg={4} xl={0} />
 
-						<Grid item md={4} sm={4} />
-						<Grid item md={4} sm={4}>
-							<div>
+						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
+							
 								<BootcampCard />
-							</div>
+							
 						</Grid>
-						<Grid item md={4} sm={4} />
+						<Grid item md={1} sm={0} lg={4} xl={0} />
 
-						<Grid item md={4} sm={4} />
-						<Grid item md={4} sm={4}>
-							<div>
+						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
+							
 								<UniversityCard />
-							</div>
+							
 						</Grid>
-						<Grid item md={4} sm={4} />
+						<Grid item md={1} sm={0} lg={4} xl={0} />
 
-						<Grid item md={4} sm={4} />
-						<Grid item md={4} sm={4}>
-							<div>
+						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
+							
 								<HighschoolCard />
-							</div>
+							
 						</Grid>
-						<Grid item md={4} sm={4} />
+						<Grid item md={1} sm={0} lg={4} xl={0} />
 					</Grid>
 				</div>
 			</div>

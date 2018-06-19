@@ -1,12 +1,16 @@
-import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import {
+  withStyles
+} from '@material-ui/core/styles';
 
 // A function you can extract and put into its own module.
 // Yes, 11 lines of code is all you need.
 function createStyled(styles, options) {
   function Styled(props) {
-    const { children, ...other } = props;
+    const {
+      children,
+      ...other
+    } = props;
     return props.children(other);
   }
   Styled.propTypes = {

@@ -15,6 +15,7 @@ const Styled = createStyled({
 		height: '65px',
 		borderRadius: '25px',
 		boxShadow: '10px 10px 5px lightgray',
+		title: 'Landing Page Image'
 	},
 
 	meThumbnailMobile: {
@@ -40,7 +41,7 @@ class PicRow extends Component {
 								</Grid>
 								<Grid item lg={6}>
 									<Typography variant="title" gutterBottom>
-										<img src={MeThumbnail} className={classes.meThumbnail} />
+										<img src={MeThumbnail} className={classes.meThumbnail} alt={classes.meThumbnail.title} />
 									</Typography>
 								</Grid>
 							</Grid>
@@ -54,7 +55,7 @@ class PicRow extends Component {
 								</Grid>
 								<Grid item xs={3}>
 									<Typography variant="caption" gutterBottom>
-										<img src={MeThumbnail} className={classes.meThumbnailMobile} />
+										<img src={MeThumbnail} className={classes.meThumbnailMobile} alt={classes.meThumbnail.title} />
 									</Typography>
 								</Grid>
 							</Grid>
