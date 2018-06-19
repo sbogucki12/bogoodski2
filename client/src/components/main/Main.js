@@ -59,8 +59,8 @@ class Main extends React.Component {
 						onChange={this.handleChange}
 						scrollable
 						scrollButtons="on"
-						indicatorColor="#4ca1af"
-						textColor="#4ca1af"
+						indicatorColor="primary"
+						textColor="primary"
 					>
 						<Tab label="Home" icon={<HomeIcon />} />
 						<Tab label="Resume" icon={<WorkIcon />} />

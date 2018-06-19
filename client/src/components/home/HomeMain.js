@@ -1,8 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
-import Grid from '@material-ui/core/Grid';
-import HomeCard from './HomeCard/../HomeCard';
+import HomeBioCard from './HomeBioCard/../HomeBioCard';
 
 const styles = theme => ({
 	root: {
@@ -21,15 +20,7 @@ class HomeMain extends React.Component {
 		const { classes } = this.props;
 		return (
 			<div className={classes.root}>
-				<Grid container spacing={24}>
-					<Grid item lg={4} md={4} sm={4} />
-					<Grid item lg={4} md={4} sm={4}>
-						<div>
-							<HomeCard />
-						</div>
-					</Grid>
-					<Grid item lg={4} md={4} sm={4} />
-				</Grid>
+				<HomeBioCard />
 			</div>
 		);
 	}

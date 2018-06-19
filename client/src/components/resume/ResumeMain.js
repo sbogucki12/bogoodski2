@@ -37,7 +37,7 @@ class ResumeMain extends React.Component {
 				</div>
 				<div>
 					<Grid container spacing={8}>
-						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={1} lg={4} xl={1} />
 						<Grid item md={11} sm={12} lg={4} xl={11}>
 							<div className={classes.heading}>
 								<Typography variant="display2">
@@ -45,60 +45,60 @@ class ResumeMain extends React.Component {
 								</Typography>
 							</div>
 						</Grid>
-						<Grid item md={1} sm={0} lg={4} xl={0} />
+						<Grid item md={1} lg={4} />
 
-						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={1} lg={4} xl={1} />
 						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
 							
 								<DeveloperCard />
 							
 						</Grid>
-						<Grid item md={1} sm={0} lg={4} xl={0} />
+						<Grid item md={1} lg={4} />
 
-						<Grid item md={1} sm={0} lg={4} xl={1} />
-						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
+						<Grid item md={1} lg={4}  />
+						<Grid item md={11} sm={12} lg={4} xl={12} className={classes.colCentered}>
 							
 								<ManagerCard />
 							
 						</Grid>
-						<Grid item md={1} sm={0} lg={4} xl={0} />
+						<Grid item md={1} lg={4} />
 
-						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={1} lg={4} xl={1} />
 						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
 							
 								<DataCard />
 							
 						</Grid>
-						<Grid item md={1} sm={0} lg={4} xl={0} />
+						<Grid item md={1} lg={4} />
 
-						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={1} lg={4} xl={1} />
 						<Grid item md={11} sm={12} lg={4} xl={11}  className={classes.colCentered}>
 							
 								<PolicyCard />
 							
 						</Grid>
-						<Grid item md={1} sm={0} lg={4} xl={0} />
+						<Grid item md={1} lg={4} />
 
-						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={1} lg={4} xl={1} />
 						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
 							
 								<AdminCard />
 							
 						</Grid>
-						<Grid item md={1} sm={0} lg={4} xl={0} />
+						<Grid item md={1} lg={4} />
 
-						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={1} lg={4} xl={1} />
 						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
 							
 								<MilitaryCard />
 							
 						</Grid>
-						<Grid item md={1} sm={0} lg={4} xl={0} />
+						<Grid item md={1} lg={4} />
 					</Grid>
 				</div>
 				<div>
 					<Grid container spacing={8}>
-						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={1} lg={4} xl={1} />
 						<Grid item md={11} sm={12} lg={4} xl={11}>
 							<div className={classes.heading}>
 								<Typography variant="display2">
@@ -106,31 +106,31 @@ class ResumeMain extends React.Component {
 								</Typography>
 							</div>
 						</Grid>
-						<Grid item md={1} sm={0} lg={4} xl={0} />
+						<Grid item md={1} lg={4} />
 
-						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={1} lg={4} xl={1} />
 						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
 							
 								<BootcampCard />
 							
 						</Grid>
-						<Grid item md={1} sm={0} lg={4} xl={0} />
+						<Grid item md={1} lg={4} />
 
-						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={1} lg={4} xl={1} />
 						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
 							
 								<UniversityCard />
 							
 						</Grid>
-						<Grid item md={1} sm={0} lg={4} xl={0} />
+						<Grid item md={1} lg={4} />
 
-						<Grid item md={1} sm={0} lg={4} xl={1} />
+						<Grid item md={1} lg={4} xl={1} />
 						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
 							
 								<HighschoolCard />
 							
 						</Grid>
-						<Grid item md={1} sm={0} lg={4} xl={0} />
+						<Grid item md={1} lg={4} />
 					</Grid>
 				</div>
 			</div>
