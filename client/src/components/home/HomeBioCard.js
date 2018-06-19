@@ -35,7 +35,7 @@ function HomeBioCard(props) {
                 </Grid>
                 <Grid item xs={11}>
                     <Typography variant="caption" component="p">
-                    <p>Born near Philadelphia, raised in North Dakota, this full-stack web developer got his professional coding career started building .NET websites using MVC and WEB APi, supported by SQL Server databases.  He now prefers building with the MongoDB/Mongoose, Node/Express, React stack, and is currently seeking full-time employment, preferably in a start-up environment.</p> 
+                    <p>Born near Philadelphia, raised in North Dakota, this full-stack web developer got his professional coding career started building .NET websites using MVC and Web API, supported by SQL Server databases.  He now prefers building with the MongoDB/Mongoose, Node/Express, React stack, and is currently seeking full-time employment, preferably in a start-up environment.</p> 
                    
                     <p>He enjoys fitness, especially daily running, is always accompanied by world’s greatest dog, Roux, and lives for electronic music; especially trance.  Currently in Long Beach, he dreams of relocating to Santa Monica or Las Vegas.</p> 
                     

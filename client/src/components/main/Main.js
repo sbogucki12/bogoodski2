@@ -16,6 +16,8 @@ import Typography from '@material-ui/core/Typography';
 import ResourceGrid from '../resourceGrid/ResourceGrid';
 import ResumeMain from '../resume/ResumeMain';
 import HomeMain from '../home/HomeMain';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import cyan from '@material-ui/core/colors/cyan';
 
 function TabContainer(props) {
 	return (
@@ -28,6 +30,13 @@ function TabContainer(props) {
 TabContainer.propTypes = {
 	children: PropTypes.node.isRequired,
 };
+
+const theme = createMuiTheme({
+	palette: {
+	  primary: cyan,
+	  tonalOffset: 0.1,
+	},
+  });
 
 const styles = theme => ({
 	root: {
@@ -52,6 +61,7 @@ class Main extends React.Component {
 		const { value } = this.state;
 
 		return (
+			<MuiThemeProvider theme={theme}>
 			<div className={classes.root}>
 				<AppBar position="static" color="default">
 					<Tabs
@@ -123,6 +133,7 @@ class Main extends React.Component {
 					</TabContainer>
 				)}
 			</div>
+			</MuiThemeProvider>
 		);
 	}
 }
