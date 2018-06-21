@@ -18,7 +18,7 @@ import ResumeMain from '../resume/ResumeMain';
 import HomeMain from '../home/HomeMain';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import cyan from '@material-ui/core/colors/cyan';
-import ContactForm from '../contact/ContactForm';
+import ContactMain from '../contact/ContactMain';
 
 function TabContainer(props) {
 	return (
@@ -100,7 +100,7 @@ class Main extends React.Component {
 				)}
 				{value === 3 && (
 					<TabContainer>
-						<ContactForm />
+						<ContactMain />
 					</TabContainer>
 				)}
 				{value === 4 && (

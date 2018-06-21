@@ -136,7 +136,7 @@ class ContactForm extends React.Component {
           onClick={this.handleClick}
           type="submit"
         >
-            Primary
+            Send
         </Button>
         <Snackbar
           anchorOrigin={{
