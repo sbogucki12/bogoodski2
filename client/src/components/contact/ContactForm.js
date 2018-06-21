@@ -63,7 +63,7 @@ class ContactForm extends React.Component {
     handleClick = (e) => {
         e.preventDefault();
         
-       axios.post('/submitMessage',{
+       axios.post('http://localhost:5000/submitMessage',{
          name: this.state.name, 
          email: this.state.email, 
          phone: this.state.phone, 
