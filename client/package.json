@@ -1,11 +1,12 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "private": true,
+  "private": true,  
   "dependencies": {
     "@material-ui/core": "^1.2.1",
     "@material-ui/icons": "^1.1.0",
     "@types/prop-types": "^15.5.3",
+    "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
     "eslint-plugin-prettier": "^2.6.0",
     "react": "^16.4.1",
