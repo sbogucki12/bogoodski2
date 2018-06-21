@@ -130,15 +130,15 @@ class ContactForm extends React.Component {
             
         </form>
         <Button 
-            variant="outlined" 
-            color="primary" 
-            className={classes.button}
-            onClick={this.handleClick}
-            type="submit"
-            >
-                Primary
-            </Button>
-            <Snackbar
+          variant="outlined" 
+          color="primary" 
+          className={classes.button}
+          onClick={this.handleClick}
+          type="submit"
+        >
+            Primary
+        </Button>
+        <Snackbar
           anchorOrigin={{
             vertical: 'bottom',
             horizontal: 'left',
@@ -158,13 +158,12 @@ class ContactForm extends React.Component {
               className={classes.close}
               onClick={this.handleClose}
             >
-              <CloseIcon />
+            <CloseIcon />
             </IconButton>
           }
         />
         </div>
         </MuiThemeProvider>
-
        )
     }
 }
