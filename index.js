@@ -2,6 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const keys = require('./config/config');
 require('./models/FormData');
+require('./models/writingsSchema');
 var bodyParser = require('body-parser');
 
 mongoose.connect(keys.mongoURI);
@@ -9,6 +10,7 @@ mongoose.connect(keys.mongoURI);
 const app = express();
 
 const FormMessage = mongoose.model('formMessages');
+const Writings = mongoose.model('writings');
 
 var allowCrossDomain = function(req, res, next) {
 	res.header('Access-Control-Allow-Origin', '*');
@@ -31,6 +33,8 @@ app.use(
 );
 app.use(bodyParser.json());
 
+
+
 app.post('/submitMessage', (req, res) => {
 	var newMessage = new FormMessage(req.body);
 	newMessage
@@ -41,6 +45,12 @@ app.post('/submitMessage', (req, res) => {
 		.catch(err => {
 			res.status(400).send();
 		});
+});
+
+app.get('/writings', function(req, res) {
+	Writings.find({}, function(err, writings) {
+		res.send(writings);
+	});
 });
 
 app.use(express.static('client/build'));
