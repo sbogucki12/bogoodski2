@@ -49,6 +49,7 @@ app.post('/submitMessage', (req, res) => {
 
 app.get('/writings', function(req, res) {
 	Writings.find({}, function(err, writings) {
+		res.setHeader('Content-Type', 'application/json');		
 		res.send(writings);
 	});
 });

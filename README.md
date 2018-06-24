@@ -47,6 +47,7 @@ The planned technology stack:
 + git (GitHub)
 + VSCode 
 + Postman
++ Axios
 
 
 
@@ -55,6 +56,16 @@ The planned technology stack:
 
 
 ## Screenshots
+
+
++ June 23, 2018: 
+
+
+*Express, via Node to MongoDB on mLab to feed Material-UI via React. Geez:*
+
+
+![recordIt](http://g.recordit.co/34Ir5WWj6v.gif)
+
 
 
 + June 22, 2018: 
@@ -147,6 +158,13 @@ The planned technology stack:
 
 
 ## Timeline: 
+
+
+**June 23, 2018:**
+
+
++ Got my Axios call to work to populate the Material-UI table for the Writings component.  But I need to fix the formatting; responsive to all devices EXCEPT iPad.  Also, need to add pagination.  And resolve, if possible, so Cross-Origin issues that are preventing some of the thumbnails from rendering.  
+
 
 
 **June 22, 2018:** 
