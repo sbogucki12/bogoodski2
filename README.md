@@ -64,7 +64,7 @@ The planned technology stack:
 *Express, via Node to MongoDB on mLab to feed Material-UI via React. Geez:*
 
 
-![recordIt](http://g.recordit.co/34Ir5WWj6v.gif)
+[Click here to see gif of this functionality](http://g.recordit.co/34Ir5WWj6v.gif)
 
 
 
