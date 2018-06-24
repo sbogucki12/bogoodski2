@@ -27,7 +27,7 @@ const Styled = createStyled({
 	},
 });
 
-function LandingButton() {
+const LandingButton = props =>{
 	return (
 		<Styled>
 			{({ classes }) => (
@@ -37,7 +37,7 @@ function LandingButton() {
 							<Grid container spacing={16}>
 								<Grid item lg={3} />
 								<Grid item lg={9}>
-									<Button className={classes.root}>{'Enter'}</Button>
+									<Button className={classes.root} onClick={props.click}>{'Enter'}</Button>
 								</Grid>
 							</Grid>
 						</div>
@@ -47,7 +47,7 @@ function LandingButton() {
 						<Grid container spacing={8}>
 							<Grid item xs={3} />
 							<Grid item xs={9}>
-								<Button className={classes.rootMobile}>{'Enter'}</Button>
+								<Button className={classes.rootMobile} onClick={props.click}>{'Enter'}</Button>
 							</Grid>
 						</Grid>
 					</MediaQuery>

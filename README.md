@@ -160,6 +160,12 @@ The planned technology stack:
 ## Timeline: 
 
 
+**June 24, 2018:**
+
+
++ Refactored how the button works on the landing page to make it more React-y. (Passed props from parent to child to grandchild in order to change state in the original parent)
+
+
 **June 23, 2018:**
 
 
