@@ -58,6 +58,15 @@ The planned technology stack:
 ## Screenshots
 
 
++ June 24, 2018: 
+
+
+*Writings component - table for desktop, list for mobile:*
+
+
+![Imgur](https://i.imgur.com/yeLhNYR.jpg)
+
+
 + June 23, 2018: 
 
 
