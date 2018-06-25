@@ -58,6 +58,17 @@ The planned technology stack:
 ## Screenshots
 
 
++ June 25, 2018:
+
+
+*Added social media component:*
+
+
+![Imgur](https://i.imgur.com/5d3vkfW.jpg)
+
+
+
+
 + June 24, 2018: 
 
 
@@ -167,6 +178,11 @@ The planned technology stack:
 
 
 ## Timeline: 
+
+
+**June 25, 2018:**
+
++ Added the social media component.
 
 
 **June 24, 2018:**
