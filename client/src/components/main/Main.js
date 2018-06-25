@@ -19,6 +19,7 @@ import HomeMain from '../home/HomeMain';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import cyan from '@material-ui/core/colors/cyan';
 import ContactMain from '../contact/ContactMain';
+import WritingsMain from '../writings/WritingsMain';
 
 function TabContainer(props) {
 	return (
@@ -112,9 +113,7 @@ class Main extends React.Component {
 				)}
 				{value === 5 && (
 					<TabContainer>
-						<Typography variant="body1" gutterBottom>
-							Writings - Coming Soon!
-						</Typography>
+						<WritingsMain />
 					</TabContainer>
 				)}
 				{value === 6 && (

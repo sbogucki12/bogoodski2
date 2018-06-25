@@ -10,7 +10,8 @@ import Paper from '@material-ui/core/Paper';
 import axios from 'axios';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import platform from 'platform';
+import Typography from '@material-ui/core/Typography';
+
 
 const styles = theme => ({
   gridRoot: {
@@ -18,9 +19,7 @@ const styles = theme => ({
   },
   root: {
     marginTop: theme.spacing.unit * 3,
-    overflowX: 'auto',    
-  },
-  table: {
+    overflowX: 'auto', 
   },
   image: {
     width: '64px',
@@ -32,11 +31,12 @@ const styles = theme => ({
   input: {
     display: 'none',
   },
-  body: {
-    
+  center: {
+    display: 'flex',
+    textAlign: 'center',
+    justifyContent: 'center',
   }
 });
-
 
 class WritingsTable extends React.Component {
     state = {
@@ -44,69 +44,72 @@ class WritingsTable extends React.Component {
     }
 
     componentDidMount() {
-      axios.get('http://localhost:5000/writings')
+      axios.get('/writings')
         .then(response => {
-          const renderData = response.data;
+          const renderData = response.data.sort((a,b) => {return b -a});
           this.setState({ renderData: renderData })
         })
     }
 
     render() {
-        const { classes } = this.props;
-
-        if(platform.product === 'iPad'){
-          return (<div>This won't work for you</div>)
-        }
+        const { classes } = this.props;       
 
         return (
           <Grid container className={classes.gridRoot} spacing={0}>
-          <Grid item sm={2} lg={2}/>
-          <Grid item sm={8} lg={8}>
-            <Paper className={classes.root}>
-              <Table className={classes.table}>
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Category</TableCell>
-                    <TableCell>Date</TableCell>
-                    <TableCell>Summary</TableCell>
-                    <TableCell>Image</TableCell>
-                    <TableCell>URL</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {this.state.renderData.map(n => {
-                    return (
-                      <TableRow key={n.id}>
-                        <TableCell component="th" scope="row">
-                          {n.title}
-                        </TableCell>
-                        <TableCell>{n.date}</TableCell>
-                        <TableCell>{n.body}</TableCell>
-                        <TableCell><img src={n.image} className={classes.image} alt="thumbnail" /></TableCell>
-                        <TableCell>
-                        <Button 
-                        color="primary" 
-                        href={n.url} 
-                        target="_blank" 
-                        rel="noreferrer noopener" 
-                        className={classes.button}
-                        >
-                        Read
-                        </Button>
-                        </TableCell>
-                      </TableRow>
-                    );
-                  })}
-                </TableBody>
-              </Table>
-            </Paper>
-            </Grid>
             <Grid item sm={2} lg={2}/>
+            <Grid item sm={8} lg={8}>
+            <br />
+              <Paper className={classes.center}>
+                <Typography variant="display1" gutterBottom>
+                  <span className="bogoodski">Selected Writings</span> 
+                </Typography>
+                <br/>          
+              </Paper>
+              <Paper className={classes.root}>
+                <Table  >
+                  <TableHead>
+                    <TableRow>
+                      <TableCell>Category</TableCell>
+                      <TableCell>Date</TableCell>
+                      <TableCell>Summary</TableCell>
+                      <TableCell>Image</TableCell>
+                      <TableCell>URL</TableCell>
+                    </TableRow>
+                  </TableHead>
+                  <TableBody>
+                    {this.state.renderData.map(n => {
+                      return (
+                        <TableRow key={n.id}>
+                          <TableCell component="th" scope="row">
+                            {n.title}
+                          </TableCell>
+                          <TableCell>{n.date}</TableCell>
+                          <TableCell>       
+                          {n.body}
+                          </TableCell>
+                          <TableCell><img src={n.image} className={classes.image} alt="thumbnail" /></TableCell>
+                          <TableCell>
+                          <Button 
+                          color="primary" 
+                          href={n.url} 
+                          target="_blank" 
+                          rel="noreferrer noopener" 
+                          className={classes.button}
+                          >
+                          Read
+                          </Button>
+                          </TableCell>
+                        </TableRow>
+                      );
+                    })}
+                  </TableBody>
+                </Table>
+              </Paper>
+              </Grid>
+              <Grid item sm={2} lg={2}/>
             </Grid>
   );
-
  }
-  
 }
 
 WritingsTable.propTypes = {

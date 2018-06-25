@@ -163,6 +163,7 @@ The planned technology stack:
 **June 24, 2018:**
 
 
++ Created two separate components for the Writings component, one with a Material-UI table for desktop viewing, and another for mobile with just an unordered list
 + Refactored how the button works on the landing page to make it more React-y. (Passed props from parent to child to grandchild in order to change state in the original parent)
 
 
