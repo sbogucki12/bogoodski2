@@ -37,102 +37,91 @@ class ResumeMain extends React.Component {
 				</div>
 				<div>
 					<Grid container spacing={8}>
-						<Grid item md={1} lg={4} xl={1} />
-						<Grid item md={11} sm={12} lg={4} xl={11}>
+						<Grid item xs={1} sm={3} md={5} lg={5} />
+						<Grid item xs={10} sm={6} md={2} lg={2}>
 							<div className={classes.heading}>
 								<Typography variant="display2">
 									<span className="bogoodski">Experience</span>
 								</Typography>
 							</div>
 						</Grid>
-						<Grid item md={1} lg={4} />
-
-						<Grid item md={1} lg={4} xl={1} />
-						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
-							
-								<DeveloperCard />
-							
-						</Grid>
-						<Grid item md={1} lg={4} />
-
-						<Grid item md={1} lg={4}  />
-						<Grid item md={11} sm={12} lg={4} xl={12} className={classes.colCentered}>
-							
-								<ManagerCard />
-							
-						</Grid>
-						<Grid item md={1} lg={4} />
-
-						<Grid item md={1} lg={4} xl={1} />
-						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
-							
-								<DataCard />
-							
-						</Grid>
-						<Grid item md={1} lg={4} />
-
-						<Grid item md={1} lg={4} xl={1} />
-						<Grid item md={11} sm={12} lg={4} xl={11}  className={classes.colCentered}>
-							
-								<PolicyCard />
-							
-						</Grid>
-						<Grid item md={1} lg={4} />
-
-						<Grid item md={1} lg={4} xl={1} />
-						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
-							
-								<AdminCard />
-							
-						</Grid>
-						<Grid item md={1} lg={4} />
-
-						<Grid item md={1} lg={4} xl={1} />
-						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
-							
-								<MilitaryCard />
-							
-						</Grid>
-						<Grid item md={1} lg={4} />
+						<Grid item xs={1} sm={3} md={5} lg={5}/>
 					</Grid>
 				</div>
 				<div>
 					<Grid container spacing={8}>
-						<Grid item md={1} lg={4} xl={1} />
-						<Grid item md={11} sm={12} lg={4} xl={11}>
+						<Grid item xs={false} sm={false} md={1} lg={1} />
+						<Grid item xs={4}  sm={3} md={2} lg={2}>
+							<DeveloperCard />
+						</Grid>
+						<Grid item xs={4} sm={1}  md={1} lg={1} />
+
+						<Grid item xs={2} sm={1} md={1} lg={1} />
+						<Grid item xs={4} sm={3} md={2}  lg={2}>
+							<ManagerCard />
+						</Grid>
+						<Grid item xs={4} sm={1} md={1} lg={1} />
+
+						<Grid item xs={2} sm={1} md={1} lg={1} />
+						<Grid item xs={4} sm={3} md={2}  lg={2}>
+							<DataCard />
+						</Grid>
+						<Grid item xs={4} sm={1} md={1} lg={1} />
+
+						<Grid item xs={2} sm={1} md={1} lg={1} />
+						<Grid item xs={4} sm={3} md={2}  lg={2}>
+							<PolicyCard />
+						</Grid>
+						<Grid item xs={4} sm={1} md={1} lg={1} />
+
+						<Grid item xs={2} sm={1} md={1} lg={1} />
+						<Grid item xs={4} sm={3} md={2}  lg={2}>
+							<AdminCard />
+						</Grid>
+						<Grid item xs={4} sm={1} md={1}  lg={1} />
+
+						<Grid item xs={2} sm={1} md={1}  lg={1} />
+						<Grid item xs={4} sm={3} md={2}  lg={2}>
+							<MilitaryCard />
+						</Grid>	
+						<Grid item xs={4} sm={1} md={1}  lg={1} />
+					</Grid>
+				</div>
+				<div>
+					<Grid container spacing={8}>
+						<Grid item xs={1} sm={3} md={5} lg={5} />
+						<Grid item xs={10} sm={6} md={2} lg={2}>
 							<div className={classes.heading}>
 								<Typography variant="display2">
 									<span className="bogoodski">Education</span>
 								</Typography>
-							</div>
+							</div>		
 						</Grid>
-						<Grid item md={1} lg={4} />
-
-						<Grid item md={1} lg={4} xl={1} />
-						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
-							
-								<BootcampCard />
-							
-						</Grid>
-						<Grid item md={1} lg={4} />
-
-						<Grid item md={1} lg={4} xl={1} />
-						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
-							
-								<UniversityCard />
-							
-						</Grid>
-						<Grid item md={1} lg={4} />
-
-						<Grid item md={1} lg={4} xl={1} />
-						<Grid item md={11} sm={12} lg={4} xl={11} className={classes.colCentered}>
-							
-								<HighschoolCard />
-							
-						</Grid>
-						<Grid item md={1} lg={4} />
+						<Grid item xs={1} sm={3} md={5} lg={5}/>
 					</Grid>
-				</div>
+					<Grid container spacing={8}>
+
+						<Grid item xs={false} sm={false} md={1} lg={1} />
+						<Grid item xs={4}  sm={3} md={2} lg={2}>
+							<BootcampCard />
+						</Grid>
+						<Grid item xs={4} sm={1}  md={1} lg={1} />
+
+						<Grid item xs={2} sm={1} md={1} lg={1} />
+						<Grid item xs={4} sm={3} md={2}  lg={2}>
+							<UniversityCard />
+						</Grid>
+						
+						<Grid item xs={4} sm={1} md={1} lg={1} />
+
+						<Grid item xs={2} sm={1} md={1} lg={1} />
+						<Grid item xs={4} sm={3} md={2}  lg={2}>
+							<HighschoolCard />
+						</Grid>
+						<Grid item xs={4} sm={1} md={1} lg={1} />
+
+					</Grid>
+				</div>	
 			</div>
 		);
 	}
@@ -143,3 +132,10 @@ ResumeMain.propTypes = {
 };
 
 export default withStyles(styles)(ResumeMain);
+
+
+						
+						
+							
+						
+							
