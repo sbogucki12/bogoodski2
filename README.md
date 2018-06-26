@@ -182,6 +182,8 @@ The planned technology stack:
 
 **June 25, 2018:**
 
+
++ Adjusted formatting on experience component
 + Added the social media component.
 
 
