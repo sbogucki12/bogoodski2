@@ -58,6 +58,16 @@ The planned technology stack:
 ## Screenshots
 
 
++ June 26, 2018: 
+
+
+*Added Dj BoGoodSki component:* 
+
+
+
+![recordIt](http://g.recordit.co/Wz3GdQpPhy.gif)
+
+
 + June 25, 2018:
 
 
@@ -178,6 +188,11 @@ The planned technology stack:
 
 
 ## Timeline: 
+
+
+**June 26, 2018:** 
+
++ Added the Dj BoGoodSki component.  It needs some major refactoring. Lol.  Also, if you look closely, some of the hover colors on the buttons aren't the unform shade of blue with the rest of the app.  I need to configure the theme for this component. 
 
 
 **June 25, 2018:**

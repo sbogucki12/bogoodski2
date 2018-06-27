@@ -1,0 +1,45 @@
+.dj {
+    animation: slide .5s ease-in forwards;
+}
+
+.scaleUp {
+    animation: scaleUp .5s ease-in forwards;
+}
+
+.changeColor {
+    background-color: #B2EBF2;
+    animation: changeColor .5s ease-in forwards; 
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(50%);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes changeColor {
+    from {
+        transform: opacity(0);
+    }
+
+    to {
+        transform: opacity(1);
+    }
+}
+
+
+

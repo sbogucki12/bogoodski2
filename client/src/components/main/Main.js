@@ -21,6 +21,7 @@ import cyan from '@material-ui/core/colors/cyan';
 import ContactMain from '../contact/ContactMain';
 import WritingsMain from '../writings/WritingsMain';
 import SocialMain from '../social/SocialMain';
+import DjMain from '../djbogoodski/DjMain';
 
 function TabContainer(props) {
 	return (
@@ -117,9 +118,7 @@ class Main extends React.Component {
 				)}
 				{value === 6 && (
 					<TabContainer>
-						<Typography variant="body1" gutterBottom>
-							DJ - Coming Soon!
-						</Typography>
+						<DjMain />
 					</TabContainer>
 				)}
 				{value === 7 && (
