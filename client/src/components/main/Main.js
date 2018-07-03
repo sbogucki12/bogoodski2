@@ -22,6 +22,7 @@ import ContactMain from '../contact/ContactMain';
 import WritingsMain from '../writings/WritingsMain';
 import SocialMain from '../social/SocialMain';
 import DjMain from '../djbogoodski/DjMain';
+import PortfolioMain from '../portfolio/PortfolioMain';
 
 function TabContainer(props) {
 	return (
@@ -78,12 +79,12 @@ class Main extends React.Component {
 					>
 						<Tab label="Home" icon={<HomeIcon />} />
 						<Tab label="Resume" icon={<WorkIcon />} />
-						<Tab label="Resources" icon={<SchoolIcon />} />
+						<Tab label="Portfolio" icon={<LanguageIcon />} />						
 						<Tab label="Contact" icon={<EmailIcon />} />
 						<Tab label="Social Media" icon={<MessageIcon />} />
 						<Tab label="Writings" icon={<CreateIcon />} />
-						<Tab label="DJ BoGoodSki" icon={<HeadsetIcon />} />
-						<Tab label="Links" icon={<LanguageIcon />} />
+						<Tab label="DJ BoGoodSki" icon={<HeadsetIcon />} />						
+						<Tab label="Resources" icon={<SchoolIcon />} />
 					</Tabs>
 				</AppBar>
 				{value === 0 && (
@@ -98,7 +99,7 @@ class Main extends React.Component {
 				)}
 				{value === 2 && (
 					<TabContainer>
-						<ResourceGrid />
+						<PortfolioMain />
 					</TabContainer>
 				)}
 				{value === 3 && (
@@ -123,9 +124,7 @@ class Main extends React.Component {
 				)}
 				{value === 7 && (
 					<TabContainer>
-						<Typography variant="body1" gutterBottom>
-							Links - Coming Soon!
-						</Typography>
+						<ResourceGrid />
 					</TabContainer>
 				)}
 			</div>

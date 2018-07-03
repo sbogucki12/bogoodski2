@@ -190,6 +190,12 @@ The planned technology stack:
 ## Timeline: 
 
 
+**July 2, 2018:**
+
+
++ Created template components that will be used to make the content components for the Portfolio tab
+
+
 **June 26, 2018:** 
 
 + Added the Dj BoGoodSki component.  It needs some major refactoring. Lol.  Also, if you look closely, some of the hover colors on the buttons aren't the unform shade of blue with the rest of the app.  I need to configure the theme for this component. 
