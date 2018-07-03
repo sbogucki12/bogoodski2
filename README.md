@@ -64,7 +64,8 @@ The planned technology stack:
 *Added project components to the "Porfolio" tab:*
 
 
-![recordIt](http://g.recordit.co/WnV4fVvNr5.gif)
+
+[Click for Gif](http://g.recordit.co/WnV4fVvNr5.gif "Gif of Portfolio Component")
 
 
 
