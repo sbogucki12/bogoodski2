@@ -58,6 +58,16 @@ The planned technology stack:
 ## Screenshots
 
 
++ July, 2018: 
+
+
+*Added project components to the "Porfolio" tab:*
+
+
+![recordIt](http://g.recordit.co/WnV4fVvNr5.gif)
+
+
+
 + June 26, 2018: 
 
 
@@ -193,7 +203,10 @@ The planned technology stack:
 **July 2, 2018:**
 
 
+
++ Created project components to populate the "Portfolio" tab.
 + Created template components that will be used to make the content components for the Portfolio tab
+
 
 
 **June 26, 2018:** 

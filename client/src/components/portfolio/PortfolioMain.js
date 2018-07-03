@@ -2,9 +2,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import ProjectTemplate from './ProjectTemplate';
 import '../../App.css';
 import Typography from '@material-ui/core/Typography';
+import Bogoodski2 from './Bogoodski2Project';
+import Bogoodski1 from './Bogoodski1Project';
+import SpaAsmr from './SpaAsmrProject';
+import Corregidor from './CorregidorProject';
+import BogoodskiPortfolio from './BogoodskiPortfolio';
+import Angular4Portfolio from './Angular4Portfolio';
+import WtsProject from './WtsProject';
+import MetaBlogProject from './MetaBlogProject';
+import PomrProject from './PomrProject';
 
 const styles = theme => ({
   root: {
@@ -32,39 +40,58 @@ function PortfolioMain(props) {
 
         <Grid item xs={1} />
         <Grid item xs={10}>
-            <ProjectTemplate />
+            <Bogoodski2 />
         </Grid>
         <Grid item xs={1} />
 
         <Grid item xs={1} />
         <Grid item xs={10}>
-            <ProjectTemplate />
+            <Bogoodski1 />
         </Grid>
         <Grid item xs={1} />
 
         <Grid item xs={1} />
         <Grid item xs={10}>
-            <ProjectTemplate />
+            <SpaAsmr />
         </Grid>
         <Grid item xs={1} />
 
         <Grid item xs={1} />
         <Grid item xs={10}>
-            <ProjectTemplate />
+            <Corregidor />
         </Grid>
         <Grid item xs={1} />
 
         <Grid item xs={1} />
         <Grid item xs={10}>
-            <ProjectTemplate />
+            <BogoodskiPortfolio />
         </Grid>
         <Grid item xs={1} />
 
         <Grid item xs={1} />
         <Grid item xs={10}>
-            <ProjectTemplate />
+            <Angular4Portfolio />
         </Grid>
         <Grid item xs={1} />
+
+        <Grid item xs={1} />
+        <Grid item xs={10}>
+            <WtsProject />
+        </Grid>
+        <Grid item xs={1} />
+
+        <Grid item xs={1} />
+        <Grid item xs={10}>
+            <MetaBlogProject />
+        </Grid>
+        <Grid item xs={1} />
+
+        <Grid item xs={1} />
+        <Grid item xs={10}>
+            <PomrProject />
+        </Grid>
+        <Grid item xs={1} />
+
       </Grid>
     </div>
   );

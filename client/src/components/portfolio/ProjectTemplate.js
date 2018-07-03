@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import PortfolioContentTemplate from './PortfolioContentTemplate';
+import PortfolioDialogTemplate from './ProjectDialogTemplate';
 import TempImage from '../../content/images/resourceImages/cSharp1.JPG';
 
 
@@ -63,9 +63,10 @@ class ProjectTemplate extends React.Component {
                       onClick={this.handleClickOpen}
                       className={classes.center}
                       >
-                        Project Title (Technology)
+                        Project Title [Technology] - Date 
                       </Button>
                     </Grid>
+                    <br />
                     <Grid item xs={12} className={classes.center}>
                       <img src={TempImage} alt="Project" className={classes.img} />
                     </Grid>
@@ -79,7 +80,7 @@ class ProjectTemplate extends React.Component {
                     aria-describedby="alert-dialog-slide-description"
                     >  
                       <DialogContent>
-                        <PortfolioContentTemplate />
+                        <PortfolioDialogTemplate />
                       </DialogContent>
                     </Dialog>
                 </Paper>

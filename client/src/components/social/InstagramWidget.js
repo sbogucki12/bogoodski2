@@ -12,7 +12,6 @@ const styles = theme => ({
                 <InstagramEmbed
                 url='https://www.instagram.com/p/BkOHFSIhIak/?taken-by=devbogoodski'
                 maxWidth={320}
-                maxHeight={400}
                 hideCaption={true}
                 containerTagName='div'
                 protocol=''
