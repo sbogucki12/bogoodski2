@@ -22,7 +22,7 @@ class Landing extends React.Component {
 						<Col />
 					</Row>
 					<Row>
-						<Col xs="11">
+						<Col xs="11" md="6" lg="11">
 							<PicRow />
 						</Col>
 						<Col />
@@ -35,9 +35,7 @@ class Landing extends React.Component {
 					</Row>
 				</Container>
 			);
-
 		}
-	
 }
 
 export default Landing;

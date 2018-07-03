@@ -201,6 +201,14 @@ The planned technology stack:
 ## Timeline: 
 
 
+
+**July 3, 2018:** 
+
+
++ Added "paper" background to social media widgets
++ Minor formatting adjustments to experience component and social component.  
+
+
 **July 2, 2018:**
 
 

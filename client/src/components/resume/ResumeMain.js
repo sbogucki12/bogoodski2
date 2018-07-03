@@ -37,88 +37,87 @@ class ResumeMain extends React.Component {
 				</div>
 				<div>
 					<Grid container spacing={8}>
-						<Grid item xs={1} sm={3} md={5} lg={5} />
-						<Grid item xs={10} sm={6} md={2} lg={2}>
+						<Grid item xs={2} sm={4} md={4} lg={5} />
+						<Grid item xs={8} sm={4} md={4} lg={2}>
 							<div className={classes.heading}>
 								<Typography variant="display2">
 									<span className="bogoodski">Experience</span>
 								</Typography>
 							</div>
 						</Grid>
-						<Grid item xs={1} sm={3} md={5} lg={5}/>
+						<Grid item xs={2} sm={4} md={4} lg={5}/>
 					</Grid>
 				</div>
 				<div>
 					<Grid container spacing={8}>
-						<Grid item xs={false} sm={false} md={1} lg={1} />
-						<Grid item xs={4}  sm={3} md={2} lg={2}>
+						<Grid item xs={1} sm={1} lg={1} />
+						<Grid item xs={8} sm={3} lg={2}>
 							<DeveloperCard />
 						</Grid>
-						<Grid item xs={4} sm={1}  md={1} lg={1} />
+						<Grid item xs={3} sm={1} lg={1} />
 
-						<Grid item xs={2} sm={1} md={1} lg={1} />
-						<Grid item xs={4} sm={3} md={2}  lg={2}>
+						<Grid item xs={1} sm={false} lg={1} />
+						<Grid item xs={8} sm={3}  lg={2}>
 							<ManagerCard />
 						</Grid>
-						<Grid item xs={4} sm={1} md={1} lg={1} />
+						<Grid item xs={3} sm={false} lg={1} />
 
-						<Grid item xs={2} sm={1} md={1} lg={1} />
-						<Grid item xs={4} sm={3} md={2}  lg={2}>
+						<Grid item xs={1} sm={1} lg={1} />
+						<Grid item xs={8} sm={3}  lg={2}>
 							<DataCard />
 						</Grid>
-						<Grid item xs={4} sm={1} md={1} lg={1} />
+						<Grid item xs={3} sm={1} lg={1} />
 
-						<Grid item xs={2} sm={1} md={1} lg={1} />
-						<Grid item xs={4} sm={3} md={2}  lg={2}>
+						<Grid item xs={1} sm={false} lg={1} />
+						<Grid item xs={8} sm={3}  lg={2}>
 							<PolicyCard />
 						</Grid>
-						<Grid item xs={4} sm={1} md={1} lg={1} />
+						<Grid item xs={3} sm={false} lg={1} />
 
-						<Grid item xs={2} sm={1} md={1} lg={1} />
-						<Grid item xs={4} sm={3} md={2}  lg={2}>
+						<Grid item xs={1} sm={1} lg={1} />
+						<Grid item xs={8} sm={3}  lg={2}>
 							<AdminCard />
 						</Grid>
-						<Grid item xs={4} sm={1} md={1}  lg={1} />
+						<Grid item xs={3} sm={1}  lg={1} />
 
-						<Grid item xs={2} sm={1} md={1}  lg={1} />
-						<Grid item xs={4} sm={3} md={2}  lg={2}>
+						<Grid item xs={1} sm={false}  lg={1} />
+						<Grid item xs={8} sm={3}  lg={2}>
 							<MilitaryCard />
 						</Grid>	
-						<Grid item xs={4} sm={1} md={1}  lg={1} />
+						<Grid item xs={3} sm={false}  lg={1} />
 					</Grid>
 				</div>
 				<div>
 					<Grid container spacing={8}>
-						<Grid item xs={1} sm={3} md={5} lg={5} />
-						<Grid item xs={10} sm={6} md={2} lg={2}>
+						<Grid item xs={2} sm={4} md={4} lg={5} />
+						<Grid item xs={8} sm={4} md={4} lg={2}>
 							<div className={classes.heading}>
 								<Typography variant="display2">
 									<span className="bogoodski">Education</span>
 								</Typography>
 							</div>		
 						</Grid>
-						<Grid item xs={1} sm={3} md={5} lg={5}/>
+						<Grid item xs={2} sm={4} md={4} lg={5}/>
 					</Grid>
 					<Grid container spacing={8}>
 
-						<Grid item xs={false} sm={false} md={1} lg={1} />
-						<Grid item xs={4}  sm={3} md={2} lg={2}>
+						<Grid item xs={1} sm={1} lg={1} />
+						<Grid item xs={8} sm={3} lg={2}>
 							<BootcampCard />
 						</Grid>
-						<Grid item xs={4} sm={1}  md={1} lg={1} />
+						<Grid item xs={3} sm={1} lg={1} />
 
-						<Grid item xs={2} sm={1} md={1} lg={1} />
-						<Grid item xs={4} sm={3} md={2}  lg={2}>
+						<Grid item xs={1} sm={false} lg={1} />
+						<Grid item xs={8} sm={3}  lg={2}>
 							<UniversityCard />
-						</Grid>
-						
-						<Grid item xs={4} sm={1} md={1} lg={1} />
+						</Grid>						
+						<Grid item xs={3} sm={false} lg={1} />
 
-						<Grid item xs={2} sm={1} md={1} lg={1} />
-						<Grid item xs={4} sm={3} md={2}  lg={2}>
+						<Grid item xs={1} sm={1} lg={1} />
+						<Grid item xs={8} sm={3}  lg={2}>
 							<HighschoolCard />
 						</Grid>
-						<Grid item xs={4} sm={1} md={1} lg={1} />
+						<Grid item xs={3} sm={1} lg={1} />
 
 					</Grid>
 				</div>	
