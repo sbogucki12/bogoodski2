@@ -12,6 +12,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import CreateIcon from '@material-ui/icons/Create';
 import HeadsetIcon from '@material-ui/icons/Headset';
 import LanguageIcon from '@material-ui/icons/Language';
+import NewReleasesIcon from '@material-ui/icons/NewReleases';
 import Typography from '@material-ui/core/Typography';
 import ResourceGrid from '../resourceGrid/ResourceGrid';
 import ResumeMain from '../resume/ResumeMain';
@@ -23,6 +24,7 @@ import WritingsMain from '../writings/WritingsMain';
 import SocialMain from '../social/SocialMain';
 import DjMain from '../djbogoodski/DjMain';
 import PortfolioMain from '../portfolio/PortfolioMain';
+import UpdatesMain from '../updates/UpdatesMain';
 
 function TabContainer(props) {
 	return (
@@ -83,6 +85,7 @@ class Main extends React.Component {
 						<Tab label="Contact" icon={<EmailIcon />} />
 						<Tab label="Social Media" icon={<MessageIcon />} />
 						<Tab label="Writings" icon={<CreateIcon />} />
+						<Tab label="Updates" icon={<NewReleasesIcon />} />
 						<Tab label="DJ BoGoodSki" icon={<HeadsetIcon />} />						
 						<Tab label="Resources" icon={<SchoolIcon />} />
 					</Tabs>
@@ -119,10 +122,15 @@ class Main extends React.Component {
 				)}
 				{value === 6 && (
 					<TabContainer>
-						<DjMain />
+						<UpdatesMain />
 					</TabContainer>
 				)}
 				{value === 7 && (
+					<TabContainer>
+						<DjMain />
+					</TabContainer>
+				)}
+				{value === 8 && (
 					<TabContainer>
 						<ResourceGrid />
 					</TabContainer>

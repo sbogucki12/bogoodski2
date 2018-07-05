@@ -195,10 +195,34 @@ The planned technology stack:
 
 
 
+## To Do:
+
+
+**July 5, 2018:**
+
+
+[ ] - Finish Updates Component
+
+
+[ ] - Add Update from July 4
+
+
+[ ] - Add keys to env var
+
+
+[ ] - Update keys config conditional to reference env var
+
 
 
 
 ## Timeline: 
+
+
+
+**July 4, 2018:** 
+
+
++ Began building an Updates component.
 
 
 
@@ -298,6 +322,7 @@ The planned technology stack:
 
 
 ## Credit
+
 
 **I'm in the market for a full time position**, preferably either in the Los Angeles area, where I currently reside, or in Las Vegas, where I intend to be.  I have experience with the .NET CORE stack, to include MVC and Web API, as well as all associated technologies: SQL Server, Entity Framework, LINQ.  However, I am trying to move my career toward the MERN stack and potentially toward learning elm which, admittedly, I currenty have zero experience :)   
 
