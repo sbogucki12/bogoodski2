@@ -48,7 +48,7 @@ class UpdatesGetArchives extends React.Component {
           aria-describedby="alert-dialog-slide-description"
         >
           <DialogTitle id="alert-dialog-slide-title">
-            {"There currently are no other updates.  Check back soon!"}
+            {"There are currently no other updates.  Check back soon!"}
           </DialogTitle>          
           <DialogActions>
             <Button onClick={this.handleClose} color="primary">

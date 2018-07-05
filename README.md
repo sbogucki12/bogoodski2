@@ -58,7 +58,16 @@ The planned technology stack:
 ## Screenshots
 
 
-+ July, 2018: 
++ July 5, 2018: 
+
+
+*Added the "Updates" tab:* 
+
+
+![recordIt](http://g.recordit.co/NXlJTXFj4F.gif)
+
+
++ July 2, 2018: 
 
 
 *Added project components to the "Porfolio" tab:*
@@ -201,10 +210,10 @@ The planned technology stack:
 **July 5, 2018:**
 
 
-[ ] - Finish Updates Component
+[ X ] - Finish Updates Component
 
 
-[ ] - Add Update from July 4
+[ X ] - Add Update from July 4
 
 
 [ ] - Add keys to env var
@@ -216,6 +225,13 @@ The planned technology stack:
 
 
 ## Timeline: 
+
+
+** July 5, 2018:**
+
+
++ Added update for July 4, 2018. 
++ Added Updates component.
 
 
 

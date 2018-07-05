@@ -9,6 +9,7 @@ import UpdateGetArchives from './UpdatesGetArchives';
 const styles = theme => ({
     root: {
         justifyContent: 'center',
+        textAlign: 'center',
     },
     paperRoot: {
         ...theme.mixins.gutters(),
@@ -23,17 +24,30 @@ const styles = theme => ({
           
         <div>
         <br />
-            <Grid container spacing={24} className={classes.root}>
-                <Grid item>
+            <Grid container spacing={8} className={classes.root}>
+                <Grid item xs={1} />
+                <Grid item xs={10}>
                     <Paper className={classes.paperRoot} elevation={8}> 
-                        <UpdateJuly4 />                       
+                        <UpdateJuly4 /> 
+                        <br />                      
+                    </Paper>  
+                </Grid>
+                <Grid item xs={1} />
+                <br />      
+                 
+                <Grid item xs={1} />
+                <Grid item xs={10}>                    
+                    <Paper className={classes.paperRoot} elevation={8}> 
+                        <Grid container spacing={0}>
+                            <Grid item xs={1} sm={4} />
+                            <Grid item xs={10} sm={4} className={classes.root}>
+                                <UpdateGetArchives />
+                            </Grid>
+                            <Grid item xs={1} sm={4} />
+                        </Grid>                           
                     </Paper>    
                 </Grid> 
-                <Grid item>
-                    <Paper className={classes.paperRoot} elevation={8}> 
-                        <UpdateGetArchives />                       
-                    </Paper>    
-                </Grid>     
+                <Grid item xs={1} />
             </Grid>
         </div>
       )

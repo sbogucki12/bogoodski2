@@ -5,26 +5,15 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import '../../App.css';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import cyan from '@material-ui/core/colors/cyan';
+import SemanticGif from '../../content/images/updateimages/semanticgif.gif';
 
 const theme = createMuiTheme({
-    a: {
-        color: cyan,
-    },
-    palette: {
-        primary: cyan,         
-     },
+   primary: cyan[100],
 });
-
-const styles = theme => ({
-    root: {
-        borderColor: '#4DD0E1'
-    },   
-  });
 
 class UpdateJuly4Dialog extends React.Component {
   state = {
@@ -40,14 +29,13 @@ class UpdateJuly4Dialog extends React.Component {
     this.setState({ open: false });
   };
 
-  render() {
-    const { classes } = this.props;
+  render() {    
     return (
       <div>
       <MuiThemeProvider theme={theme}>
-        <Button className={classes.root} onClick={this.handleClickOpen('paper')}>
-            <Typography variant="display3" gutterBottom>
-                Click here to continue ...
+        <Button onClick={this.handleClickOpen('paper')}>
+            <Typography variant="caption" gutterBottom>
+                Click to read the rest of this update ...
             </Typography>
             
         </Button>
@@ -64,7 +52,22 @@ class UpdateJuly4Dialog extends React.Component {
             </DialogTitle>
           <DialogContent>
             <DialogContentText>
-              Test
+              <Typography variant="body1" gutterBottom>
+                Wanting a place to practice implementing some front-end tools, such as design libraries and components, I created a sandbox repository on <a href="https://github.com/sbogucki12/bogoodskisandbox" target="_blank" rel="noreferrer noopener">GitHub</a>, published to <a href="https://pristine-sequoia-74948.herokuapp.com/" target="_blank" rel="noreferrer noopener">Heroku</a>.  Currently, I am using that sandbox app to practice implementing the Semantic UI library into a ReactJS app.  The Heroku app is basically a Create-React-App supported by a Node.js/ExpressJS server; the server isn’t essential now but will accommodate future expansion and allow me to focus then on my experimentation and practice without the headwind of having to build support architecture.
+                <br />
+                <br />
+                
+                <center><img src={SemanticGif} alt="Semantic Project" /></center>
+                
+                <br />
+                
+                At my previous office with the Federal Aviation Administration, I managed a program where civilian aerospace engineers conducted regulatory inspections on behalf of the government.  Those engineers are known as Designee Engineering Representatives or "DERs", and the FAA maintains a directory of those DERs online in a PDF.  I have a plan to consolidate that data, store in a database (likely SQL in the Azure cloud), and create a client application that allows searching and filtering of that directory. 
+                
+                <br /> 
+                <br />
+                I am registered to attend the Y Combinator “Work at a Startup” event in Mountain View at the end of the month.  I’m going to drive up there, attend the event, and spend the night.  I’m really looking forward to it! 
+                
+              </Typography>
             </DialogContentText>
           </DialogContent>
           <DialogActions>
@@ -78,4 +81,4 @@ class UpdateJuly4Dialog extends React.Component {
   }
 }
 
-export default withStyles(styles)(UpdateJuly4Dialog);
+export default UpdateJuly4Dialog;
