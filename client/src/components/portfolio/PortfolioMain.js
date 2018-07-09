@@ -29,14 +29,14 @@ function PortfolioMain(props) {
   return (
     <div className={classes.root}>
       <Grid container spacing={24}>
-        <Grid item xs={2} />
-        <Grid item xs={8} className={classes.center}>
+        <Grid item xs={1} />
+        <Grid item xs={10} className={classes.center}>
             <Typography variant="display2" gutterBottom>
                 <span className="bogoodski">Selected Projects</span>
             </Typography>
             
         </Grid>
-        <Grid item xs={2} />
+        <Grid item xs={1} />
 
         <Grid item xs={1} />
         <Grid item xs={10}>

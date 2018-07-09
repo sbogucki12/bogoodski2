@@ -191,22 +191,22 @@ class DjMain extends React.Component {
         <div className={classes.root}>
         <br />
             <Grid container spacing={8}>
-                <Grid item xs={1} lg={3}/>
-                <Grid item xs={10} lg={4}>
+                <Grid item xs={1} />
+                <Grid item xs={10}>
                     <Typography variant="display2" gutterBottom>
                         <span className="bogoodski">Selected Mixes</span>
                     </Typography>
                 </Grid>
-            <Grid item xs={1} lg={3} />
+                <Grid item xs={1} />
 
-            <Grid item xs={1} lg={3}/>
-            <Grid item xs={10} lg={4}>
-                <Typography variant="subheading" gutterBottom>
-                    All sets mixed live, "on the fly", using a Native Instruments S5 mixer, recorded directly from Traktor 2
-                </Typography>        
+                <Grid item xs={1} />
+                <Grid item xs={10}>
+                    <Typography variant="subheading" gutterBottom>
+                        All sets mixed live, "on the fly", using a Native Instruments S5 mixer, recorded directly from Traktor 2
+                    </Typography>        
+                </Grid>
+                <Grid item xs={1} />
             </Grid>
-            <Grid item xs={1} lg={3} />
-        </Grid>
         <br />
             <Grid container spacing={0}>
                 <Grid item xs={1} lg={3} />

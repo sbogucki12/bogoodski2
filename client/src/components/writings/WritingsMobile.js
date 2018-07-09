@@ -32,8 +32,8 @@ class WritingsMobile extends React.Component {
             <div className={classes.root}>
             <br/>
             <Grid container spacing={0} className={classes.center}>
-                <Grid item xs={2} />
-                <Grid item xs={8}>
+                <Grid item xs={1} />
+                <Grid item xs={10}>
                     <Typography variant="display1" gutterBottom>
                         <span className="bogoodski">Selected Writings</span> 
                     </Typography>
@@ -42,7 +42,7 @@ class WritingsMobile extends React.Component {
                         (Mobile View) - This component best viewed on desktop
                     </Typography>
                 </Grid>
-                <Grid item xs={2} />
+                <Grid item xs={1} />
             </Grid>
             <br />
             <Grid container spacing={0}>
