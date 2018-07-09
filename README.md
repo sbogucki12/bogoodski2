@@ -58,6 +58,16 @@ The planned technology stack:
 ## Screenshots
 
 
++ July 8, 2018: 
+
+
+*Added a new update:*
+
+
+![recordIt](http://g.recordit.co/efPX88Dvz3.gif)
+
+
+
 + July 5, 2018: 
 
 
@@ -204,30 +214,19 @@ The planned technology stack:
 
 
 
-## To Do:
-
-
-**July 5, 2018:**
-
-
-[ X ] - Finish Updates Component
-
-
-[ X ] - Add Update from July 4
-
-
-[ ] - Add keys to env var
-
-
-[ ] - Update keys config conditional to reference env var
-
-
 
 
 ## Timeline: 
 
 
-** July 5, 2018:**
+**July 8, 2018:** 
+
+
++ Added a new update to the Updates component.
+
+
+
+**July 5, 2018:**
 
 
 + Added update for July 4, 2018. 
