@@ -13,6 +13,7 @@ import Angular4Portfolio from './Angular4Portfolio';
 import WtsProject from './WtsProject';
 import MetaBlogProject from './MetaBlogProject';
 import PomrProject from './PomrProject';
+import AcoPortalProject from './AcoPortalProject';
 
 const styles = theme => ({
   root: {
@@ -35,6 +36,12 @@ function PortfolioMain(props) {
                 <span className="bogoodski">Selected Projects</span>
             </Typography>
             
+        </Grid>
+        <Grid item xs={1} />
+
+        <Grid item xs={1} />
+        <Grid item xs={10}>
+            <AcoPortalProject />
         </Grid>
         <Grid item xs={1} />
 

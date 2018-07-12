@@ -219,6 +219,14 @@ The planned technology stack:
 ## Timeline: 
 
 
+**July 11, 2018:**
+
+
++ Reordered tabs. 
++ Added current project to portfolio component. 
+
+
+
 **July 8, 2018:** 
 
 

@@ -80,12 +80,12 @@ class Main extends React.Component {
 						textColor="primary"
 					>
 						<Tab label="Home" icon={<HomeIcon />} />
-						<Tab label="Resume" icon={<WorkIcon />} />
-						<Tab label="Portfolio" icon={<LanguageIcon />} />						
-						<Tab label="Contact" icon={<EmailIcon />} />
+						<Tab label="Portfolio" icon={<LanguageIcon />} />
 						<Tab label="Social Media" icon={<MessageIcon />} />
 						<Tab label="Writings" icon={<CreateIcon />} />
+						<Tab label="Contact" icon={<EmailIcon />} />
 						<Tab label="Updates" icon={<NewReleasesIcon />} />
+						<Tab label="Resume" icon={<WorkIcon />} />	
 						<Tab label="DJ BoGoodSki" icon={<HeadsetIcon />} />						
 						<Tab label="Resources" icon={<SchoolIcon />} />
 					</Tabs>
@@ -94,37 +94,37 @@ class Main extends React.Component {
 					<TabContainer>
 						<HomeMain />
 					</TabContainer>
-				)}
+				)}				
 				{value === 1 && (
-					<TabContainer>
-						<ResumeMain />
-					</TabContainer>
-				)}
-				{value === 2 && (
 					<TabContainer>
 						<PortfolioMain />
 					</TabContainer>
 				)}
-				{value === 3 && (
-					<TabContainer>
-						<ContactMain />
-					</TabContainer>
-				)}
-				{value === 4 && (
+				{value === 2 && (
 					<TabContainer>
 						<SocialMain />
 					</TabContainer>
 				)}
-				{value === 5 && (
+				{value === 3 && (
 					<TabContainer>
 						<WritingsMain />
 					</TabContainer>
 				)}
-				{value === 6 && (
+				{value === 4 && (
+					<TabContainer>
+						<ContactMain />
+					</TabContainer>
+				)}	
+				{value === 5 && (
 					<TabContainer>
 						<UpdatesMain />
 					</TabContainer>
 				)}
+				{value === 6 && (
+					<TabContainer>
+						<ResumeMain />
+					</TabContainer>
+				)}	
 				{value === 7 && (
 					<TabContainer>
 						<DjMain />

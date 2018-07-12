@@ -50,8 +50,7 @@ class UpdateJuly8Dialog extends React.Component {
                 <span className="bogoodski">Update - July 8, 2018</span>
             </DialogTitle>
           <DialogContent>
-            <DialogContentText>
-              <Typography variant="body1" gutterBottom>
+            <DialogContentText>              
                 The next addition to this app will be a "Sandbox" component.  I'll use that to practice implementation of different things on which I'm working, new technologies that I'm learning, and old skills that I want to refresh.  
                 <br /> 
                 <br />
@@ -59,8 +58,7 @@ class UpdateJuly8Dialog extends React.Component {
                 <br />
                 <br />               
                 I’m trying to avoid deploying to Azure.  My old Azure account quickly became expensive.  I haven’t discovered a perfect way of publishing .NET Core to Heroku yet.  That difficulty is sort of welcome because I’ve gained valuable knowledge of Docker images, containers, and buildpacks during my struggles wrestling .NET Core onto Heroku.    
-                <br /> 
-              </Typography>
+                <br />               
             </DialogContentText>
           </DialogContent>
           <DialogActions>

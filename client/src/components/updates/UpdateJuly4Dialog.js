@@ -51,23 +51,16 @@ class UpdateJuly4Dialog extends React.Component {
                 <span className="bogoodski">Update - July 4, 2018</span>
             </DialogTitle>
           <DialogContent>
-            <DialogContentText>
-              <Typography variant="body1" gutterBottom>
+            <DialogContentText>              
                 Wanting a place to practice implementing some front-end tools, such as design libraries and components, I created a sandbox repository on <a href="https://github.com/sbogucki12/bogoodskisandbox" target="_blank" rel="noreferrer noopener">GitHub</a>, published to <a href="https://pristine-sequoia-74948.herokuapp.com/" target="_blank" rel="noreferrer noopener">Heroku</a>.  Currently, I am using that sandbox app to practice implementing the Semantic UI library into a ReactJS app.  The Heroku app is basically a Create-React-App supported by a Node.js/ExpressJS server; the server isn’t essential now but will accommodate future expansion and allow me to focus then on my experimentation and practice without the headwind of having to build support architecture.
                 <br />
                 <br />
-                
-                <center><img src={SemanticGif} alt="Semantic Project" /></center>
-                
+                <img src={SemanticGif} alt="Semantic Project" className="july4" />
                 <br />
-                
                 At my previous office with the Federal Aviation Administration, I managed a program where civilian aerospace engineers conducted regulatory inspections on behalf of the government.  Those engineers are known as Designee Engineering Representatives or "DERs", and the FAA maintains a directory of those DERs online in a PDF.  I have a plan to consolidate that data, store in a database (likely SQL in the Azure cloud), and create a client application that allows searching and filtering of that directory. 
-                
                 <br /> 
                 <br />
                 I am registered to attend the Y Combinator “Work at a Startup” event in Mountain View at the end of the month.  I’m going to drive up there, attend the event, and spend the night.  I’m really looking forward to it! 
-                
-              </Typography>
             </DialogContentText>
           </DialogContent>
           <DialogActions>

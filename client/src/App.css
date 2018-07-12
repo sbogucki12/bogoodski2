@@ -21,3 +21,11 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+.july4 {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	width: 50%;
+	height: 80%;
+}
