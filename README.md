@@ -58,6 +58,19 @@ The planned technology stack:
 ## Screenshots
 
 
+
++ July 20, 2018: 
+
+
+*Added some simple form validation:*
+
+
+
+![recordIt](http://g.recordit.co/DUhEacvtha.gif)
+
+
+
+
 + July 8, 2018: 
 
 
