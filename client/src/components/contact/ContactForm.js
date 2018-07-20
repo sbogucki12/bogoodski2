@@ -9,6 +9,7 @@ import Snackbar from '@material-ui/core/Snackbar';
 import IconButton from '@material-ui/core/IconButton';
 import CloseIcon from '@material-ui/icons/Close';
 import axios from 'axios';
+import "../../App.css";
 
 const theme = createMuiTheme({
 	palette: {
@@ -46,6 +47,7 @@ class ContactForm extends React.Component {
     state = {
       name: '',
       email: '',
+      emailError: '',
       multiline: '',
       phone: '',
       open: false,
@@ -54,23 +56,43 @@ class ContactForm extends React.Component {
     handleChange = name => event => {
       this.setState({
         [name]: event.target.value,        
-      });
-      console.log("Name:" + this.state.name + "Email: " + this.state.email + "Message: " + this.state.multiline + "phone: " + this.state.phone)
+      });      
     };
 
+    validate = () => {
+      let isError = false;
+      const errors = {
+        emailError: ""
+      };
 
+      if(this.state.email.indexOf("@") === -1){
+        isError = true; 
+        errors.emailError = "Email must contain @ symbol."
+      }
+
+      if(isError){
+        this.setState({
+          ...this.state, 
+          ...errors
+        });
+      }
+      return isError; 
+    }
 
     handleClick = (e) => {
         e.preventDefault();
+        const err = this.validate();
+        if(!err){
+          axios.post('/submitMessage',{
+            name: this.state.name, 
+            email: this.state.email,         
+            phone: this.state.phone, 
+            message: this.state.multiline
+          })
+  
+          this.setState({ open: true });
+        }
         
-       axios.post('/submitMessage',{
-         name: this.state.name, 
-         email: this.state.email, 
-         phone: this.state.phone, 
-         message: this.state.multiline
-       })
-
-        this.setState({ open: true });
     };
     
     handleClose = (event, reason) => {
@@ -105,6 +127,7 @@ class ContactForm extends React.Component {
                 value={this.state.email}
                 onChange={this.handleChange('email')}
                 margin="normal"
+                helperText={this.state.emailError}
                 />
                 <TextField
                 id="phone"

@@ -219,6 +219,14 @@ The planned technology stack:
 ## Timeline: 
 
 
+
+**July 20, 2018:** 
+
+
++ Added input validation to the contact form to ensure that email addresses contain an "@" symbol. 
+
+
+
 **July 11, 2018:**
 
 
