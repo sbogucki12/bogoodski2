@@ -35,6 +35,7 @@ import DatcwVol11Image from '../../content/images/djImages/Dactw11Image.JPG';
 import DatcwVol12Image from '../../content/images/djImages/Dactw12Image.JPG';
 import DatcwVol13Image from '../../content/images/djImages/Dactw13Image.JPG';
 import DatcwVol14Image from '../../content/images/djImages/Dactw14Image.JPG';
+import CurrentMix from "./CurrentMix";
 
 
 function Transition(props) {
@@ -189,6 +190,13 @@ class DjMain extends React.Component {
     const { classes } = this.props;
     return (
         <div className={classes.root}>
+        <Grid container spacing={0}>
+            <Grid item xs={1} />
+            <Grid item xs={10}>
+            <CurrentMix />
+            </Grid>
+            <Grid item xs={1}/>        
+        </Grid>
         <br />
             <Grid container spacing={8}>
                 <Grid item xs={1} />

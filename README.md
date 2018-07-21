@@ -233,6 +233,12 @@ The planned technology stack:
 
 
 
+**July 21, 2018:** 
+
+
++ Added a new mix to the DJ Bogoodski component.
+
+
 **July 20, 2018:** 
 
 
