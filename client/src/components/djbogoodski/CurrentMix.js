@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import "../../App.css";
 import Typography from '@material-ui/core/Typography';
-import FolderIcon from "../../content/images/djImages/folder.svg";
+import CurveIcon from "../../content/images/djImages/curvy-road-warning-sign.svg"
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
@@ -56,21 +56,22 @@ function CurrentMix(props) {
                     gutterBottom
                     align="center"
                     >
-                        Secret Set
+                        Dog Rave Vol. 1: "The Long and Winding Path"
                     </Typography>
                     <br />
                     <Typography 
                     variant="subheading" 
                     gutterBottom 
                     align="center">
-                        July 20, 2018
+                        July 21, 2018
                     </Typography>
                     <br />
                     <hr />
-                    <img src={FolderIcon} alt="logo" className={classes.icon} />
+                    <img src={CurveIcon} alt="logo" className={classes.icon} />
+                    <br />                   
                     <br />
-                    <iframe title="The Secret Set" width="100%" height="100%" scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/474881562&color=%23ff5500&inverse=false&auto_play=false&show_user=true"></iframe>
-                    <br />
+                    <iframe width="100%" height="100%" scrolling="no" title="Dog Rave Vol 1" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/475348725&color=%23141414&inverse=false&auto_play=false&show_user=true"></iframe>
+                    <br /> 
                     <br />
                     <ExpansionPanel>
                         <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
@@ -80,224 +81,185 @@ function CurrentMix(props) {
                             <List component="nav">
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/trubble-original-mix/7588821" target="blank" rel="noreferrer noopener">
-                                            1. Eric Prydz - "Trubble"
+                                        <a href="https://www.beatport.com/track/7-instead-of-8-original-mix/3863278" target="blank" rel="noreferrer noopener">
+                                            1. Rank 1 - "7 Instead of 8"
+                                        </a>
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem button>                          
+                                    <ListItemText>
+                                        <a href="https://www.beatport.com/track/daddyrock-arty-remix/1978219" target="blank" rel="noreferrer noopener">
+                                            2. Sander Van Doorn - "DaddyRock" (Arty Remix)
+                                        </a>
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem button>                          
+                                    <ListItemText>
+                                        <a href="https://www.beatport.com/track/feel-it-extended-mix/8951871" target="blank" rel="noreferrer noopener">
+                                            3. Solis & Sean Truby - "Feel It"
+                                        </a>
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem button>                          
+                                    <ListItemText>
+                                        <a href="https://www.beatport.com/track/hello-jerome-isma-ae-remix/6738741" target="blank" rel="noreferrer noopener">
+                                            4. Above & Beyond - "Hello" (Jerome Isma-Ae Remix)
+                                        </a>
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem button>                          
+                                    <ListItemText>
+                                        <a href="https://www.beatport.com/track/format-original-mix/7476743" target="blank" rel="noreferrer noopener">
+                                            5. Danilo Ercole - "Format"
+                                        </a>
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem button>                          
+                                    <ListItemText>
+                                        <a href="https://www.beatport.com/track/meridian-extended-mix/8923302" target="blank" rel="noreferrer noopener">
+                                            6. Monoverse - "Meridian"
+                                        </a>
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem button>                          
+                                    <ListItemText>
+                                        <a href="https://www.beatport.com/track/vega-original-mix/8424830" target="blank" rel="noreferrer noopener">
+                                            7. Genix - "Vega"
+                                        </a>
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem button>                          
+                                    <ListItemText>
+                                        <a href="https://www.beatport.com/track/zara-original-mix/1639797" target="blank" rel="noreferrer noopener">
+                                            8. Arty - "Zara"
+                                        </a>
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem button>                          
+                                    <ListItemText>
+                                        <a href="https://www.beatport.com/track/l-e-d-there-be-light-tydi-and-trent-mcdermott-mix/824092" target="blank" rel="noreferrer noopener">
+                                            9. Rank 1 - "L.E.D. There Be Light" (Tydi & Trent McDermott Remix)
+                                        </a>
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem button>                          
+                                    <ListItemText>
+                                        <a href="https://www.beatport.com/track/skyfire-alex-m-o-r-p-h-remix/2072222" target="blank" rel="noreferrer noopener">
+                                            10. Shogun - "Skyfire" (Alex M.O.R.P.H. Remix)
+                                        </a>
+                                    </ListItemText>
+                                </ListItem>
+                                <ListItem button>                          
+                                    <ListItemText>
+                                        <a href="https://www.beatport.com/track/fiji-original-mix/3643807" target="blank" rel="noreferrer noopener">
+                                            11. Atlantis - "Fiji"
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
                                         <a href="https://www.beatport.com/track/ozone-markus-schulz-extended-remix/10602802" target="blank" rel="noreferrer noopener">
-                                            2. Giuseppe Ottaviani - "Ozone" (Markus Schulz Remix)
+                                            12. Giuseppe Ottaviani - "Ozone" (Markus Schulz Remix)
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/lucky-strike-original-mix/3254559" target="blank" rel="noreferrer noopener">
-                                            3. Mat Zo - "Lucky Strike"
+                                        <a href="https://www.beatport.com/track/sunburst-original-mix/3475238" target="blank" rel="noreferrer noopener">
+                                            13. Pryda - "Sunburst"
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/run-original-mix/6825620" target="blank" rel="noreferrer noopener">
-                                            4. Pryda - "Run"
+                                        <a href="https://www.beatport.com/track/nana-jerome-isma-ae-remix/7893534" target="blank" rel="noreferrer noopener">
+                                            14. Orkidea - "Nana" (Jerome Isma-Ae Remix)
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/zero-day-original-mix/8990378" target="blank" rel="noreferrer noopener">
-                                            5. Judah - "Zero-Day"
+                                        <a href="https://www.beatport.com/track/flashback-eric-prydz-remix/1032291" target="blank" rel="noreferrer noopener">
+                                            15. Calvin Harris - "Flashback" (Eric Prydz Remix)
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/outsider-original-mix/1986318" target="blank" rel="noreferrer noopener">
-                                            6. Beat Service - "Outsider"
+                                        <a href="https://www.beatport.com/track/mutter-original-mix/7809098" target="blank" rel="noreferrer noopener">
+                                            16. Konstantin Sibold - "Mutter"
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/tuvan-original-mix/954402" target="blank" rel="noreferrer noopener">
-                                            7. Gaia - "Tuvan"
+                                        <a href="https://www.beatport.com/track/kill-techno-original-mix/827162" target="blank" rel="noreferrer noopener">
+                                            17. Sharam - "Kill Techno"
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/adagio-for-strings-original-mix/5717983" target="blank" rel="noreferrer noopener">
-                                            8. Mark Sixma - "Adagio For Strings"
+                                        <a href="https://www.beatport.com/track/hey-now-sasha-remix/5679228" target="blank" rel="noreferrer noopener">
+                                            18. London Grammar - "Hey Now" (Sasha Remix)
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/a-slice-of-heaven-extended-mix/10284098" target="blank" rel="noreferrer noopener">
-                                            9. Ferry Corsten, Paul Oakenfold - "A Slice of Heaven"
+                                        <a href="https://www.beatport.com/track/faded-original-mix/5350923" target="blank" rel="noreferrer noopener">
+                                            19. Zhu - "Faded"
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/save-this-moment-original-mix/1836294" target="blank" rel="noreferrer noopener">
-                                            10. John O'Callaghan, Betsie Larkin - "Save This Moment"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/bashert-well-meet-again-original-mix/7394988" target="blank" rel="noreferrer noopener">
-                                            11. Klauss Goulart - "Bashert (We'll Meet Again)"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/nothing-without-me-feat-ana-diaz-extended-mix/3958837" target="blank" rel="noreferrer noopener">
-                                            12. Markus Schulz, Ana Diaz - "Nothing Without Me"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/concrete-angel-original-mix/3750376" target="blank" rel="noreferrer noopener">
-                                            13. Gareth Emery, Christina Novelli - "Concrete Angel"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/beautiful-relocate-remix/507441" target="blank" rel="noreferrer noopener">
-                                            14. Ferry Corsten - "Beautiful (ReLocate Remix)"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/neuron-original-mix/6825622" target="blank" rel="noreferrer noopener">
-                                            15. Pryda - "Neuron"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/your-mind-original-mix/10670339" target="blank" rel="noreferrer noopener">
-                                            16. Adam Beyer, Bart Skils - "Your Mind"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/free-tibet-vini-vici-remix/7509573" target="blank" rel="noreferrer noopener">
-                                            17. Hilight Tribe - "Free Tibet (Vini Vici Remix)"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/neverdeader-feat-brooks-original-mix/8338784" target="blank" rel="noreferrer noopener">
-                                            18. Blackgummy (Featuring Brooks) - "NeverDeader"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/animal-original-mix/786047" target="blank" rel="noreferrer noopener">
-                                            19. Pryda - "Animal"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/style-fusion-jessus-progressivo-mix/1035194" target="blank" rel="noreferrer noopener">
-                                            20. Elsandro - "Style Fusion (Jessus Progressivo Mix)"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/brief-encounter-original-mix/9080001" target="blank" rel="noreferrer noopener">
-                                            21. Wrechiski - "Brief Encounter"
+                                        <a href="https://www.beatport.com/track/mota-mota-original-mix/10008952" target="blank" rel="noreferrer noopener">
+                                            20. Markus Schulz presents Dakota, Koen Groeneveld - "Mota-Mota"
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
                                         <a href="https://www.beatport.com/track/cafe-del-mar-deadmau5-remix/8036476" target="blank" rel="noreferrer noopener">
-                                            22. Energy52 - "Cafe Del Mar (deadmau5 Remix)"
+                                            21. Energy 52 - "Cafe Del Mar" (deadmau5 Remix)
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/sweet-harmony-isma-ae-remix/620744" target="blank" rel="noreferrer noopener">
-                                            23. Serge Devant - "Sweet Harmony (Jerome Isma-Ae Remix)"
+                                        <a href="https://www.beatport.com/track/airwave-21st-century-mix/5650470" target="blank" rel="noreferrer noopener">
+                                            22. Rank 1 - "Airwave" (21st Century Mix)
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/linking-people-2011-giuseppe-ottaviani-remix/1966086" target="blank" rel="noreferrer noopener">
-                                            24. Giuseppe Ottaviani - "Linking People 2011"
+                                        <a href="https://www.beatport.com/track/save-this-moment-gareth-emery-remix/1836295" target="blank" rel="noreferrer noopener">
+                                            23. John O'Callaghan, Betsie Larkin - "Save This Moment" (Gareth Emery Remix)
                                         </a>
                                     </ListItemText>
                                 </ListItem>
                                 <ListItem button>                          
                                     <ListItemText>
-                                        <a href="https://www.beatport.com/track/tesseract-original-mix/6246542" target="blank" rel="noreferrer noopener">
-                                            25. Ilan Bluestone - "Tesseract"
+                                        <a href="https://www.beatport.com/track/were-all-we-need-feat-zoe-johnston-extended-mix/6052121" target="blank" rel="noreferrer noopener">
+                                            24. Above & Beyond, Zoe Johnston - "We're All We Need"
                                         </a>
                                     </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/memory-lane-original-mix/8209533" target="blank" rel="noreferrer noopener">
-                                            26. Kyau & Albert - "Memory Lane"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/we-control-the-sunlight-feat-jwaydan-original-mix/2006016" target="blank" rel="noreferrer noopener">
-                                            27. Aly & Fila (Featuring Jwaydan) - "We Control the Sunlight"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/song-for-sendai-original-mix/1816207" target="blank" rel="noreferrer noopener">
-                                            28. The Thrillseekers - "Song for Sendai"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/sunset-at-caf-mambo-original-mix/7588824" target="blank" rel="noreferrer noopener">
-                                            29. Eric Prydz - "Sunset at Cafe Mambo"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
-                                <ListItem button>                          
-                                    <ListItemText>
-                                        <a href="https://www.beatport.com/track/muhanjala-davey-asprey-extended-remix/9805238" target="blank" rel="noreferrer noopener">
-                                            30. Duderstadt - "Muhanjala (Davey Asprey Remix)"
-                                        </a>
-                                    </ListItemText>
-                                </ListItem>
+                                </ListItem>                                
                             </List>
                         </ExpansionPanelDetails>
                     </ExpansionPanel>
                     <br />                    
                     <Typography variant="body2" gutterBottom align="center">
-                        This is the <b><i>Secret Set</i></b> because it's not mixed very well. &#128514;  So, let's keep it between you and me! 
+                        Introducing DJ BoGoodSki’s newest series, aptly named, because the volumes are recorded from the raves he performs in his condo for a party of one.  That audience member being Roux, world’s number one dog! <span role="img" aria-label="dog">&#128054;</span>
                         <br />
-                        The music is awesome, so you should give it a listen.  But I introduced some flaws into the audio.  So, consider this set a prelude into the much better set I'll mix soon!
-                        <br /> 
-                        Enjoy!
+                        <br />
+                        Today’s journey is a “Long and Winding Path”; it’ll string you up, down, left, and right.  Though it takes a moment to find its groove, what’s good in this set works well.  So, stick with it.  Trust me (?)
+                        <br />
+                        <br />
+                        
+                        The tracklisting contains links to each tune on Beatport where we encourage you to purchase the tracks and support great music! 
                         <br />
                     </Typography>
                     <br />
