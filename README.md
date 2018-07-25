@@ -59,6 +59,21 @@ The planned technology stack:
 
 
 
++ July 25, 2018:
+
+
+
+*Created a secret sandbox component to practice storing state in a parent component, and using event handlers in the children components to call class methods in the parent component to update state:* 
+
+
+
+
+![recordIt](http://g.recordit.co/iR78cyN4B6.gif)
+
+
+
+
+
 + July 20, 2018: 
 
 
@@ -230,6 +245,15 @@ The planned technology stack:
 
 
 ## Timeline: 
+
+
+
+**July 25: 2018:** 
+
+
+
++ Created a secret sandbox component, where I practiced storing state in a parent component and using functions passed down as props to eventhandlers in children to update the state (handled by a class method in the parent component).  See related gif above in the screenshots section.  
+
 
 
 
