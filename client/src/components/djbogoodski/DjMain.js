@@ -23,6 +23,8 @@ import DatcwVol12 from '../djbogoodski/DatcwVol12';
 import DatcwVol13 from '../djbogoodski/DatcwVol13';
 import DatcwVol14 from '../djbogoodski/DatcwVol14';
 import SecretSet from './SecretSet';
+import DogRaveVol1 from './DogRaveVol1';
+import DogRaveVol2 from './DogRaveVol2';
 import DatcwVol1Image from '../../content/images/djImages/Dactw1Image.JPG';
 import DatcwVol2Image from '../../content/images/djImages/Dactw2Image.JPG';
 import DatcwVol3Image from '../../content/images/djImages/Dactw3Image.JPG';
@@ -37,8 +39,9 @@ import DatcwVol12Image from '../../content/images/djImages/Dactw12Image.JPG';
 import DatcwVol13Image from '../../content/images/djImages/Dactw13Image.JPG';
 import DatcwVol14Image from '../../content/images/djImages/Dactw14Image.JPG';
 import SecretSetImage from '../../content/images/djImages/folder.svg';
-import CurrentMix from "./CurrentMix";
-
+import DogRaveVol1Img from '../../content/images/djImages/curvy-road-warning-sign.svg';
+import DogRaveVol2Img from '../../content/images/djImages/dogRaveVol2CoverJuly282018.jpg'
+import CurrentMix from './CurrentMix';
 
 function Transition(props) {
   return <Slide direction="up" {...props} />;
@@ -71,7 +74,9 @@ class DjMain extends React.Component {
     open12: false,
     open13: false,
     open14: false, 
-    open15: false
+    open15: false, 
+    open16: false, 
+    open17: false
   };
 
   handleClickOpen = () => {
@@ -132,6 +137,14 @@ class DjMain extends React.Component {
 
   handleClickOpen15 = () => {
     this.setState({ open15: true });
+  };
+
+  handleClickOpen16 = () => {
+    this.setState({ open16: true });
+  };
+
+  handleClickOpen17 = () => {
+    this.setState({ open17: true });
   };
 
 
@@ -196,77 +209,168 @@ class DjMain extends React.Component {
     this.setState({ open15: false });
   };
 
+  handleClose16 = () => {
+    this.setState({ open16: false });
+  };
+
+  handleClose17 = () => {
+    this.setState({ open17: false });
+  };
+
 
   render() {
     const { classes } = this.props;
-    return (
-        <div className={classes.root}>
-        <Grid container spacing={0}>
-            <Grid item xs={1} />
-            <Grid item xs={10}>
-            <CurrentMix />
-            </Grid>
-            <Grid item xs={1}/>        
-        </Grid>
-        <br />
-            <Grid container spacing={8}>
+    return (               
+        <div className={classes.root}>        
+            <Grid container spacing={0}>
                 <Grid item xs={1} />
                 <Grid item xs={10}>
-                    <Typography variant="display2" gutterBottom>
-                        <span className="bogoodski">Selected Mixes</span>
-                    </Typography>
+                <CurrentMix />
                 </Grid>
-                <Grid item xs={1} />
-
-                <Grid item xs={1} />
-                <Grid item xs={10}>
-                    <Typography variant="subheading" gutterBottom>
-                        All sets mixed live, "on the fly", using a Native Instruments S5 mixer, recorded directly from Traktor 2
-                    </Typography>        
-                </Grid>
-                <Grid item xs={1} />
+                <Grid item xs={1}/>        
             </Grid>
             <br />
-            <Grid container spacing={0}>
-            <Grid item xs={1} lg={3} />
-            <Grid item xs={10} lg={4}>
-            <Paper elevation={8}>        
                 <Grid container spacing={8}>
-                    <Grid item xs={1} md={3} />
-                    <Grid item xs={10} md={6}>
-                        <Typography variant="headline" gutterBottom>
-                            The Secret Set 
+                    <Grid item xs={1} />
+                    <Grid item xs={10}>
+                        <Typography variant="display2" gutterBottom>
+                            <span className="bogoodski">Selected Mixes</span>
                         </Typography>
                     </Grid>
-                    <Grid item xs={1} md={3} />
+                    <Grid item xs={1} />
 
-                    <Grid item xs={1} md={3} />
-                    <Grid item xs={5} md={3}>
-                        <img src={SecretSetImage} alt="The Secret Set" className={classes.image} />
+                    <Grid item xs={1} />
+                    <Grid item xs={10}>
+                        <Typography variant="subheading" gutterBottom>
+                            All sets mixed live, "on the fly", using a Native Instruments S5 mixer, recorded directly from Traktor 2
+                        </Typography>        
                     </Grid>
-                    <Grid item xs={5} md={3}>
-                        <Button onClick={this.handleClickOpen15}>Click to Listen / See Playlist</Button>
-                    </Grid>
-                    <Grid item xs={1} md={3} />
+                    <Grid item xs={1} />
                 </Grid>
-            </Paper>
-            </Grid>
-        <Grid item xs={1} lg={3} />
-        </Grid>
+                <br />
+                <br />
+                <Grid container spacing={0}>
+                    <Grid item xs={1} lg={3} />
+                    <Grid item xs={10} lg={4}>
+                        <Paper elevation={8}>        
+                            <Grid container spacing={8}>
+                                <Grid item xs={1} md={3} />
+                                <Grid item xs={10} md={6}>
+                                    <Typography variant="headline" gutterBottom>
+                                        Dog Rave: Vol. 2
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={1} md={3} />
 
-        <Dialog
-            open={this.state.open15}
-            TransitionComponent={Transition}
-            keepMounted
-            onClose={this.handleClose15}
-            aria-labelledby="alert-dialog-slide-title"
-            aria-describedby="alert-dialog-slide-description"
-        >
-            <DialogContent>
-                <SecretSet />
-            </DialogContent>
-        </Dialog>
-        <br />
+                                <Grid item xs={1} md={3} />
+                                <Grid item xs={5} md={3}>
+                                    <img src={DogRaveVol2Img} alt="Dog Rave Vol 2" className={classes.image} />
+                                </Grid>
+                                <Grid item xs={5} md={3}>
+                                    <Button onClick={this.handleClickOpen17}>Click to Listen / See Playlist</Button>
+                                </Grid>
+                                <Grid item xs={1} md={3} />
+                            </Grid>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={1} lg={3} />
+                </Grid>
+
+                <Dialog
+                open={this.state.open17}
+                TransitionComponent={Transition}
+                keepMounted
+                onClose={this.handleClose17}
+                aria-labelledby="alert-dialog-slide-title"
+                aria-describedby="alert-dialog-slide-description"
+                >
+                    <DialogContent>
+                        <DogRaveVol2 />
+                    </DialogContent>
+                </Dialog>
+                <br />
+                <br />
+                <Grid container spacing={0}>
+                    <Grid item xs={1} lg={3} />
+                    <Grid item xs={10} lg={4}>
+                        <Paper elevation={8}>        
+                            <Grid container spacing={8}>
+                                <Grid item xs={1} md={3} />
+                                <Grid item xs={10} md={6}>
+                                    <Typography variant="headline" gutterBottom>
+                                        Dog Rave: Vol. 1
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={1} md={3} />
+
+                                <Grid item xs={1} md={3} />
+                                <Grid item xs={5} md={3}>
+                                    <img src={DogRaveVol1Img} alt="Dog Rave Vol 1" className={classes.image} />
+                                </Grid>
+                                <Grid item xs={5} md={3}>
+                                    <Button onClick={this.handleClickOpen16}>Click to Listen / See Playlist</Button>
+                                </Grid>
+                                <Grid item xs={1} md={3} />
+                            </Grid>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={1} lg={3} />
+                </Grid>
+
+                <Dialog
+                open={this.state.open16}
+                TransitionComponent={Transition}
+                keepMounted
+                onClose={this.handleClose16}
+                aria-labelledby="alert-dialog-slide-title"
+                aria-describedby="alert-dialog-slide-description"
+                >
+                    <DialogContent>
+                        <DogRaveVol1 />
+                    </DialogContent>
+                </Dialog>
+                <br />
+                <br />
+                <Grid container spacing={0}>
+                    <Grid item xs={1} lg={3} />
+                    <Grid item xs={10} lg={4}>
+                        <Paper elevation={8}>        
+                            <Grid container spacing={8}>
+                                <Grid item xs={1} md={3} />
+                                <Grid item xs={10} md={6}>
+                                    <Typography variant="headline" gutterBottom>
+                                        The Secret Set 
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={1} md={3} />
+
+                                <Grid item xs={1} md={3} />
+                                <Grid item xs={5} md={3}>
+                                    <img src={SecretSetImage} alt="The Secret Set" className={classes.image} />
+                                </Grid>
+                                <Grid item xs={5} md={3}>
+                                    <Button onClick={this.handleClickOpen15}>Click to Listen / See Playlist</Button>
+                                </Grid>
+                                <Grid item xs={1} md={3} />
+                            </Grid>
+                        </Paper>
+                    </Grid>
+                <Grid item xs={1} lg={3} />
+            </Grid>
+
+            <Dialog
+                open={this.state.open15}
+                TransitionComponent={Transition}
+                keepMounted
+                onClose={this.handleClose15}
+                aria-labelledby="alert-dialog-slide-title"
+                aria-describedby="alert-dialog-slide-description"
+            >
+                <DialogContent>
+                    <SecretSet />
+                </DialogContent>
+            </Dialog>
+            <br />
             <Grid container spacing={0}>
                 <Grid item xs={1} lg={3} />
                 <Grid item xs={10} lg={4}>
@@ -826,7 +930,7 @@ class DjMain extends React.Component {
                     <DatcwVol1 />
                 </DialogContent>
             </Dialog>
-        </div>
+        </div>       
     );
   }
 }

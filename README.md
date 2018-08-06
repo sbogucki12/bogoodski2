@@ -59,6 +59,18 @@ The planned technology stack:
 
 
 
++ August 6, 2018: 
+
+
+
+*Added most recent DJ mix to DJ component:*
+
+
+
+![Imgur](https://i.imgur.com/2TZMH0J.jpg)
+
+
+
 + July 25, 2018:
 
 
@@ -245,6 +257,13 @@ The planned technology stack:
 
 
 ## Timeline: 
+
+
+
+**August 6, 2018:**
+
+
++ Added most recent DJ mix to DJ component. 
 
 
 
