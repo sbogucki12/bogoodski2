@@ -5,7 +5,11 @@ require('./models/FormData');
 require('./models/writingsSchema');
 var bodyParser = require('body-parser');
 
-mongoose.connect(keys.mongoURI);
+if(process.env.NODE_ENV === 'production'){
+	mongoose.connect(process.env.mongoURI)
+}else{
+	mongoose.connect(keys.mongoURI);
+}
 
 const app = express();
 

@@ -25,6 +25,8 @@ import SocialMain from '../social/SocialMain';
 import DjMain from '../djbogoodski/DjMain';
 import PortfolioMain from '../portfolio/PortfolioMain';
 import UpdatesMain from '../updates/UpdatesMain';
+import Fitness from '../fitness/Fitness';
+import FitnessIcon from '@material-ui/icons/DirectionsRun'; 
 
 function TabContainer(props) {
 	return (
@@ -84,9 +86,11 @@ class Main extends React.Component {
 						<Tab label="Social Media" icon={<MessageIcon />} />
 						<Tab label="Writings" icon={<CreateIcon />} />
 						<Tab label="Contact" icon={<EmailIcon />} />
+						<Tab label="DJ BoGoodSki" icon={<HeadsetIcon />} />
+						<Tab label="Fitness" icon={<FitnessIcon />} />	
 						<Tab label="Updates" icon={<NewReleasesIcon />} />
 						<Tab label="Resume" icon={<WorkIcon />} />	
-						<Tab label="DJ BoGoodSki" icon={<HeadsetIcon />} />						
+											
 						<Tab label="Resources" icon={<SchoolIcon />} />
 					</Tabs>
 				</AppBar>
@@ -114,23 +118,28 @@ class Main extends React.Component {
 					<TabContainer>
 						<ContactMain />
 					</TabContainer>
-				)}	
-				{value === 5 && (
-					<TabContainer>
-						<UpdatesMain />
-					</TabContainer>
 				)}
-				{value === 6 && (
-					<TabContainer>
-						<ResumeMain />
-					</TabContainer>
-				)}	
-				{value === 7 && (
+				{value === 5 && (
 					<TabContainer>
 						<DjMain />
 					</TabContainer>
 				)}
+				{value === 6 && (
+					<TabContainer>
+						<Fitness />
+					</TabContainer>
+				)}	
+				{value === 7 && (
+					<TabContainer>
+						<UpdatesMain />
+					</TabContainer>
+				)}
 				{value === 8 && (
+					<TabContainer>
+						<ResumeMain />
+					</TabContainer>
+				)}
+				{value === 9 && (
 					<TabContainer>
 						<ResourceGrid />
 					</TabContainer>
