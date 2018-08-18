@@ -59,6 +59,17 @@ The planned technology stack:
 
 
 
++ August 18, 2018: 
+
+
+*Added a "fitness" component:*
+
+
+![Imgur](https://i.imgur.com/VmMqXdU.jpg)
+
+
+
+
 + August 6, 2018: 
 
 
@@ -257,6 +268,14 @@ The planned technology stack:
 
 
 ## Timeline: 
+
+
+
+**August 18, 2018:** 
+
+
+
++ Added a "fitness" component
 
 
 
