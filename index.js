@@ -1,14 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const keys = require('./config/config');
 require('./models/FormData');
 require('./models/writingsSchema');
 var bodyParser = require('body-parser');
 
 if(process.env.NODE_ENV === 'production'){
-	mongoose.connect(process.env.mongoURI)
+	mongoose.connect(process.env.mongoURI);
 }else{
-	mongoose.connect(keys.mongoURI);
+	const keys = require('./config/devkeys');
+    mongoose.connect(keys.mongoURI)
 }
 
 const app = express();
