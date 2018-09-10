@@ -271,6 +271,16 @@ The planned technology stack:
 
 
 
+**Sept. 10, 2018:**
+
+
+
++ Updated DJ component
++ Updated run log
+
+
+
+
 **August 18, 2018:** 
 
 

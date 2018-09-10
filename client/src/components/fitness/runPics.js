@@ -1,34 +1,34 @@
-import Aug23Run from '../../content/images/fitness/runAug232018.jpg';
-import Aug22Run from '../../content/images/fitness/runAug222018.JPG';
-import Aug21Run from '../../content/images/fitness/runAug212018.JPG';
-import Aug20Run from '../../content/images/fitness/runAug202018.JPG';
-import Aug19Run from '../../content/images/fitness/runAug192018.JPG';
+import Sep10Run from '../../content/images/fitness/runSep102018.JPG';
+import Sep09Run1 from '../../content/images/fitness/runSep0920181.JPG';
+import Sep09Run2 from '../../content/images/fitness/runSep0920182.JPG';
+import Sep08Run from '../../content/images/fitness/runSep082018.JPG';
+import Sep07Run from '../../content/images/fitness/runSep072018.JPG';
 
 export const runPics = [
     {
-        image: Aug23Run,
-        date: 'Aug 23, 2018',
-        name: 'Aug232018'
+        image: Sep10Run,
+        date: 'Sept. 10, 2018',
+        name: 'Sep102018'
     },
     {
-        image: Aug22Run,
-        date: 'Aug 22, 2018',
-        name: 'Aug222018'
+        image: Sep09Run2,
+        date: 'Sept. 9, 2018 (2 of 2)',
+        name: 'Sep102018Run2'
     },
     {
-        image: Aug21Run,
-        date: 'Aug 21, 2018',
-        name: 'Aug212018'
+        image: Sep09Run1,
+        date: 'Sept. 9, 2018 (1 of 2)',
+        name: 'Sep092018Run1'
     },
     {
-        image: Aug20Run,
-        date: 'Aug 20, 2018',
-        name: 'Aug202018'
+        image: Sep08Run,
+        date: 'Sept. 8, 2018',
+        name: 'Sep082018'
     },
     {
-        image: Aug19Run,
-        date: 'Aug 19, 2018',
-        name: 'Aug192018'
+        image: Sep07Run,
+        date: 'Sept. 7, 2018',
+        name: 'Sep072018'
     }
 ];
 

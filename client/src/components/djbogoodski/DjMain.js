@@ -25,6 +25,7 @@ import DatcwVol14 from '../djbogoodski/DatcwVol14';
 import SecretSet from './SecretSet';
 import DogRaveVol1 from './DogRaveVol1';
 import DogRaveVol2 from './DogRaveVol2';
+import DogRaveVol3 from './DogRaveVol3';
 import DatcwVol1Image from '../../content/images/djImages/Dactw1Image.JPG';
 import DatcwVol2Image from '../../content/images/djImages/Dactw2Image.JPG';
 import DatcwVol3Image from '../../content/images/djImages/Dactw3Image.JPG';
@@ -40,7 +41,8 @@ import DatcwVol13Image from '../../content/images/djImages/Dactw13Image.JPG';
 import DatcwVol14Image from '../../content/images/djImages/Dactw14Image.JPG';
 import SecretSetImage from '../../content/images/djImages/folder.svg';
 import DogRaveVol1Img from '../../content/images/djImages/curvy-road-warning-sign.svg';
-import DogRaveVol2Img from '../../content/images/djImages/dogRaveVol2CoverJuly282018.jpg'
+import DogRaveVol2Img from '../../content/images/djImages/dogRaveVol2CoverJuly282018.jpg';
+import DogRaveVol3Img from '../../content/images/djImages/DogRaveVol3Aug042018Cover.jpg';
 import CurrentMix from './CurrentMix';
 
 function Transition(props) {
@@ -76,7 +78,8 @@ class DjMain extends React.Component {
     open14: false, 
     open15: false, 
     open16: false, 
-    open17: false
+    open17: false, 
+    open18: false
   };
 
   handleClickOpen = () => {
@@ -145,6 +148,10 @@ class DjMain extends React.Component {
 
   handleClickOpen17 = () => {
     this.setState({ open17: true });
+  };
+
+  handleClickOpen18 = () => {
+    this.setState({ open18: true });
   };
 
 
@@ -217,6 +224,10 @@ class DjMain extends React.Component {
     this.setState({ open17: false });
   };
 
+  handleClose18 = () => {
+    this.setState({ open18: false });
+  };
+
 
   render() {
     const { classes } = this.props;
@@ -247,6 +258,47 @@ class DjMain extends React.Component {
                     </Grid>
                     <Grid item xs={1} />
                 </Grid>
+                <br />
+                <br />
+                <Grid container spacing={0}>
+                    <Grid item xs={1} lg={3} />
+                    <Grid item xs={10} lg={4}>
+                        <Paper elevation={8}>        
+                            <Grid container spacing={8}>
+                                <Grid item xs={1} md={3} />
+                                <Grid item xs={10} md={6}>
+                                    <Typography variant="headline" gutterBottom>
+                                        Dog Rave: Vol. 3
+                                    </Typography>
+                                </Grid>
+                                <Grid item xs={1} md={3} />
+
+                                <Grid item xs={1} md={3} />
+                                <Grid item xs={5} md={3}>
+                                    <img src={DogRaveVol3Img} alt="Dog Rave Vol 3" className={classes.image} />
+                                </Grid>
+                                <Grid item xs={5} md={3}>
+                                    <Button onClick={this.handleClickOpen18}>Click to Listen / See Playlist</Button>
+                                </Grid>
+                                <Grid item xs={1} md={3} />
+                            </Grid>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs={1} lg={3} />
+                </Grid>
+
+                <Dialog
+                open={this.state.open18}
+                TransitionComponent={Transition}
+                keepMounted
+                onClose={this.handleClose18}
+                aria-labelledby="alert-dialog-slide-title"
+                aria-describedby="alert-dialog-slide-description"
+                >
+                    <DialogContent>
+                        <DogRaveVol3 />
+                    </DialogContent>
+                </Dialog>
                 <br />
                 <br />
                 <Grid container spacing={0}>
