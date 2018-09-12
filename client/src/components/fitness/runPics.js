@@ -1,10 +1,15 @@
+import Sep11Run from '../../content/images/fitness/runSep1120182.JPG';
 import Sep10Run from '../../content/images/fitness/runSep102018.JPG';
 import Sep09Run1 from '../../content/images/fitness/runSep0920181.JPG';
 import Sep09Run2 from '../../content/images/fitness/runSep0920182.JPG';
 import Sep08Run from '../../content/images/fitness/runSep082018.JPG';
-import Sep07Run from '../../content/images/fitness/runSep072018.JPG';
 
 export const runPics = [
+    {
+        image: Sep11Run,
+        date: 'Sept. 11, 2018',
+        name: 'Sep112018'
+    },
     {
         image: Sep10Run,
         date: 'Sept. 10, 2018',
@@ -24,11 +29,6 @@ export const runPics = [
         image: Sep08Run,
         date: 'Sept. 8, 2018',
         name: 'Sep082018'
-    },
-    {
-        image: Sep07Run,
-        date: 'Sept. 7, 2018',
-        name: 'Sep072018'
     }
 ];
 
